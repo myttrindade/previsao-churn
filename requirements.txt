@@ -1,0 +1,7 @@
+-r requirements-api.txt
+shap==0.52.0
+matplotlib==3.11.2
+pytest==9.1.1
+httpx==0.28.1
+jupyter
+nbconvert==7.17.1

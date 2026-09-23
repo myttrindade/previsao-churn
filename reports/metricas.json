@@ -1,0 +1,44 @@
+{
+  "modelo": "LightGBM",
+  "comparacao_validacao_cruzada": {
+    "Regressão logística": {
+      "roc_auc": 0.8453896009974459,
+      "pr_auc": 0.6568601360205598
+    },
+    "Random Forest": {
+      "roc_auc": 0.8447040590322417,
+      "pr_auc": 0.649957394291539
+    },
+    "LightGBM": {
+      "roc_auc": 0.8445687929726293,
+      "pr_auc": 0.658993768683941
+    }
+  },
+  "ponto_de_corte": 0.29,
+  "teste": {
+    "clientes": 1409,
+    "taxa_churn": 0.2654364797728886,
+    "roc_auc": 0.8449249528533416,
+    "pr_auc": 0.6545740782957997,
+    "precisao": 0.5294117647058824,
+    "recall": 0.7700534759358288,
+    "matriz_confusao": {
+      "vp": 288,
+      "fp": 256,
+      "fn": 86,
+      "vn": 779
+    },
+    "clientes_abordados": 544
+  },
+  "premissas_negocio": {
+    "meses_gratis_oferta": 1,
+    "custo_operacional_usd": 5.0,
+    "taxa_sucesso_oferta": 0.3,
+    "horizonte_meses": 12
+  },
+  "resultado_campanha_teste_usd": {
+    "Não fazer nada": 0.0,
+    "Abordar todos os clientes": 627.4400000000169,
+    "Abordar só quem o modelo indica": 33301.37000000001
+  }
+}

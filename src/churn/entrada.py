@@ -23,6 +23,8 @@ OBRIGATORIAS = [
 ]
 OPCIONAIS = ["TotalCharges"]  # se faltar, é estimado como meses × mensalidade
 ID = "__id__"
+NOME = "__nome__"
+ROTULOS = {ID: "ID do cliente", NOME: "Nome do cliente"}
 
 
 def normaliza(texto) -> str:
@@ -33,6 +35,8 @@ def normaliza(texto) -> str:
 
 # Nomes de coluna aceitos para cada variável (além do próprio nome original).
 SINONIMOS = {
+    NOME: ["nome", "nomedocliente", "nomecliente", "razaosocial", "nomefantasia", "empresa", "clientenome", "name",
+           "customername", "nomecompleto"],
     ID: ["customerid", "id", "iddocliente", "idcliente", "codigo", "codigodocliente", "codigocliente", "cliente",
          "clienteid", "codcliente", "matricula", "cpfcnpj", "cnpj", "cpf", "conta"],
     "tenure": ["mesescomocliente", "meses", "tempodecasa", "tempodecasameses", "tempocliente", "antiguidade", "mesesdecontrato"],
@@ -99,7 +103,7 @@ class MapeamentoNecessario(ErroDeEntrada):
             "mensagem": "Não reconheci algumas colunas. Indique qual coluna da sua planilha corresponde a cada informação.",
             "faltando": [{"campo": c, "nome": NOMES[c]} for c in self.faltando],
             "colunas_arquivo": self.colunas,
-            "reconhecidas": {NOMES.get(k, "ID do cliente"): v for k, v in self.reconhecidas.items()},
+            "reconhecidas": {NOMES.get(k, ROTULOS.get(k, k)): v for k, v in self.reconhecidas.items()},
         }
 
 
@@ -121,7 +125,7 @@ def reconhecer_colunas(colunas: list[str], mapeamento: dict[str, str] | None = N
     """Devolve {variável do modelo: coluna da planilha}."""
     por_nome = {normaliza(c): c for c in colunas}
     achadas = {}
-    for campo in [ID] + OBRIGATORIAS + OPCIONAIS:
+    for campo in [ID, NOME] + OBRIGATORIAS + OPCIONAIS:
         for candidato in [campo] + SINONIMOS.get(campo, []):
             if normaliza(candidato) in por_nome:
                 achadas[campo] = por_nome[normaliza(candidato)]
@@ -165,8 +169,8 @@ def _categoria(campo: str, valor) -> str | None:
     return None
 
 
-def padronizar(bruto: pd.DataFrame, mapeamento: dict[str, str] | None = None) -> tuple[pd.Series, pd.DataFrame]:
-    """Converte a planilha do usuário no formato do modelo. Devolve (ids, dados)."""
+def padronizar(bruto: pd.DataFrame, mapeamento: dict[str, str] | None = None) -> tuple[pd.Series, pd.Series, pd.DataFrame]:
+    """Converte a planilha do usuário no formato do modelo. Devolve (ids, nomes, dados)."""
     bruto = bruto.dropna(how="all")
     bruto.columns = [str(c).strip() for c in bruto.columns]
     if bruto.empty:
@@ -179,6 +183,8 @@ def padronizar(bruto: pd.DataFrame, mapeamento: dict[str, str] | None = None) ->
     bruto = bruto.reset_index(drop=True)
     ids = (bruto[achadas[ID]].astype(str).str.strip() if ID in achadas
            else pd.Series([f"linha {i + 2}" for i in range(len(bruto))]))
+    nomes = (bruto[achadas[NOME]].fillna("").astype(str).str.strip() if NOME in achadas
+             else pd.Series([""] * len(bruto)))
     df = pd.DataFrame(index=bruto.index)
     for campo in ("tenure", "MonthlyCharges"):
         df[campo] = _numero(bruto[achadas[campo]])
@@ -199,4 +205,4 @@ def padronizar(bruto: pd.DataFrame, mapeamento: dict[str, str] | None = None) ->
             raise ErroDeEntrada(f"Não reconheci os valores {', '.join(repr(r) for r in ruins)} na coluna "
                                 f"'{achadas[campo]}' ({NOMES[campo]}).")
         df[campo] = convertido
-    return ids, df
+    return ids, nomes, df

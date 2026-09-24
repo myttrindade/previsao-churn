@@ -110,3 +110,11 @@ def test_cada_cliente_traz_os_dados_para_simulacao():
     simulado = cliente.post("/prever", json={**c["dados"], "SeniorCitizen": 1 if c["dados"]["SeniorCitizen"] == "Yes" else 0})
     assert simulado.status_code == 200
     assert abs(simulado.json()["probabilidade_churn"] - c["probabilidade_churn"]) < 1e-3
+
+
+def test_nome_do_cliente_e_reconhecido_em_portugues_e_ingles():
+    exemplo = cliente.get("/analisar-base/exemplo").json()["clientes"]
+    assert all(c["nome"] for c in exemplo)
+    df = pd.read_excel(io.BytesIO(_excel_pt())).head(5).rename(columns={"Nome do cliente": "Razão social"})
+    r = _envia(df).json()["clientes"]
+    assert {c["nome"] for c in r} == set(df["Razão social"])

@@ -1,501 +1,501 @@
-customerID,tenure,MonthlyCharges,TotalCharges,gender,SeniorCitizen,Partner,Dependents,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod
-CLI-00001,31,19.54,604.13,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00002,18,66.11,1201.53,Male,0,No,No,Yes,Yes,DSL,Yes,No,No,No,No,Yes,Month-to-month,No,Bank transfer (automatic)
-CLI-00003,34,56.12,1908.98,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,Yes,No,No,No,One year,Yes,Mailed check
-CLI-00004,59,19.34,1118.15,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00005,16,83.27,1303.47,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,No,Yes,No,Month-to-month,No,Electronic check
-CLI-00006,39,95.97,3694.44,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00007,23,98.42,2202.87,Female,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,One year,Yes,Mailed check
-CLI-00008,46,20.71,936.46,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00009,20,96.35,1884.23,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,No,Mailed check
-CLI-00010,21,90.59,1898.37,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Mailed check
-CLI-00011,55,65.72,3583.48,Female,1,No,No,Yes,No,DSL,Yes,No,Yes,Yes,Yes,No,Two year,No,Bank transfer (automatic)
-CLI-00012,52,51.63,2698.75,Male,1,Yes,No,Yes,No,DSL,No,Yes,No,No,No,No,Two year,No,Mailed check
-CLI-00013,45,19.2,852.64,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Electronic check
-CLI-00014,13,83.91,1060.32,Female,0,No,No,Yes,Yes,Fiber optic,No,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00015,40,84.97,3364.36,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,Yes,No,Yes,One year,Yes,Credit card (automatic)
-CLI-00016,15,70.27,1070.19,Female,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,No,One year,Yes,Mailed check
-CLI-00017,3,52.32,154.66,Male,0,No,No,Yes,No,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00018,18,47.85,856.37,Male,0,No,No,Yes,No,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Mailed check
-CLI-00019,69,115.0,8056.39,Male,0,No,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check
-CLI-00020,70,67.98,4731.96,Male,0,Yes,No,Yes,No,DSL,Yes,Yes,Yes,Yes,No,No,Two year,No,Credit card (automatic)
-CLI-00021,18,101.68,1872.75,Female,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00022,2,71.28,146.14,Female,0,No,No,Yes,No,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00023,26,84.03,2159.94,Male,1,Yes,No,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00024,70,79.14,5618.23,Male,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,No,Two year,Yes,Bank transfer (automatic)
-CLI-00025,16,84.6,1333.55,Male,0,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00026,67,81.54,5345.02,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Two year,Yes,Credit card (automatic)
-CLI-00027,6,40.86,244.25,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00028,44,91.99,4072.45,Female,1,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,Yes,One year,No,Credit card (automatic)
-CLI-00029,41,102.21,4300.13,Male,1,No,No,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00030,51,51.91,2591.16,Female,0,Yes,No,No,No phone service,DSL,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00031,39,20.8,821.54,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00032,6,107.91,646.51,Female,0,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00033,25,23.85,583.07,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00034,72,90.19,6677.84,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00035,65,112.41,7392.47,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,Two year,No,Credit card (automatic)
-CLI-00036,70,80.99,5543.05,Male,1,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00037,56,55.67,3193.42,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,Yes,No,No,Two year,No,Bank transfer (automatic)
-CLI-00038,44,115.63,4966.56,Female,0,No,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
-CLI-00039,1,58.52,57.09,Female,1,No,No,Yes,Yes,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00040,51,25.33,1278.77,Female,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00041,8,72.16,592.45,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,No,Yes,No,Yes,Two year,Yes,Credit card (automatic)
-CLI-00042,0,19.02,0.0,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00043,59,21.62,1307.59,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00044,0,31.98,0.0,Male,0,No,Yes,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Mailed check
-CLI-00045,65,72.63,4598.31,Female,0,Yes,Yes,Yes,Yes,DSL,No,No,No,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00046,21,103.53,2183.08,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,No,Yes,Yes,No,Month-to-month,No,Mailed check
-CLI-00047,47,121.38,5690.75,Male,0,No,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,One year,No,Credit card (automatic)
-CLI-00048,42,85.57,3607.74,Female,0,No,No,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic)
-CLI-00049,14,108.92,1546.58,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00050,10,64.88,655.75,Male,0,Yes,No,Yes,Yes,DSL,Yes,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00051,30,80.56,2488.9,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00052,72,104.81,7390.87,Male,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,Two year,Yes,Electronic check
-CLI-00053,4,88.09,358.97,Female,1,No,No,Yes,No,Fiber optic,No,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00054,65,20.62,1333.15,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00055,72,26.19,1917.73,Male,1,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
-CLI-00056,72,24.06,1773.04,Female,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00057,6,78.73,486.32,Male,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00058,65,89.58,5740.96,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Mailed check
-CLI-00059,44,88.89,3900.12,Female,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00060,20,64.57,1325.71,Female,1,No,No,Yes,Yes,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Mailed check
-CLI-00061,68,77.41,5404.66,Male,0,Yes,No,Yes,Yes,DSL,Yes,No,No,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00062,13,65.35,843.07,Male,0,No,Yes,Yes,No,DSL,No,No,No,No,Yes,Yes,Month-to-month,No,Credit card (automatic)
-CLI-00063,65,84.56,5641.57,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,Yes,Mailed check
-CLI-00064,62,107.28,6613.8,Male,0,Yes,No,Yes,No,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00065,14,88.65,1231.77,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,No,Month-to-month,No,Electronic check
-CLI-00066,24,73.82,1798.96,Male,1,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00067,39,100.0,3893.26,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,No,One year,Yes,Credit card (automatic)
-CLI-00068,31,79.33,2451.59,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,Yes,No,No,Two year,No,Bank transfer (automatic)
-CLI-00069,15,86.67,1291.17,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00070,34,26.64,902.11,Female,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00071,33,91.35,2949.4,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,No,Electronic check
-CLI-00072,60,99.68,5823.28,Female,1,Yes,No,Yes,Yes,Fiber optic,Yes,No,Yes,No,Yes,Yes,One year,Yes,Electronic check
-CLI-00073,52,25.69,1356.24,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00074,33,63.62,2107.58,Female,0,Yes,No,Yes,Yes,DSL,Yes,No,No,Yes,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00075,1,21.39,21.61,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic)
-CLI-00076,6,76.3,466.1,Female,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,No,Electronic check
-CLI-00077,72,91.65,6491.94,Male,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,Yes,Two year,Yes,Electronic check
-CLI-00078,14,78.79,1085.44,Male,0,No,Yes,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00079,49,93.69,4529.64,Male,1,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,One year,Yes,Electronic check
-CLI-00080,37,38.76,1417.25,Male,0,No,No,No,No phone service,DSL,No,No,No,Yes,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00081,72,81.85,5985.38,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,No,Yes,Two year,No,Credit card (automatic)
-CLI-00082,1,73.99,73.43,Female,0,No,No,Yes,No,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00083,8,78.2,618.96,Female,1,No,No,Yes,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00084,15,90.45,1367.85,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,No,Electronic check
-CLI-00085,1,74.8,73.39,Male,0,No,Yes,Yes,No,DSL,No,No,No,Yes,Yes,Yes,Month-to-month,No,Mailed check
-CLI-00086,7,66.7,455.87,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,Yes,No,Yes,No,One year,No,Electronic check
-CLI-00087,14,20.75,293.94,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Mailed check
-CLI-00088,6,66.37,404.35,Male,1,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00089,48,20.17,956.33,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00090,71,18.27,1307.76,Female,1,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic)
-CLI-00091,12,66.81,779.31,Male,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00092,3,22.83,68.1,Male,0,Yes,No,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00093,2,83.13,167.04,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00094,60,40.34,2384.59,Male,0,No,Yes,No,No phone service,DSL,Yes,Yes,No,Yes,No,No,One year,Yes,Bank transfer (automatic)
-CLI-00095,36,97.22,3468.05,Female,0,No,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00096,64,103.73,6682.36,Female,1,Yes,No,Yes,No,Fiber optic,Yes,Yes,Yes,No,No,Yes,One year,No,Bank transfer (automatic)
-CLI-00097,32,89.63,2883.63,Female,0,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00098,64,56.99,3571.68,Female,0,Yes,Yes,Yes,Yes,DSL,No,Yes,No,No,No,No,One year,Yes,Bank transfer (automatic)
-CLI-00099,2,86.71,175.57,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00100,72,67.39,4729.82,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,Yes,Yes,No,Two year,No,Bank transfer (automatic)
-CLI-00101,21,19.24,415.43,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Mailed check
-CLI-00102,8,37.47,294.41,Male,0,No,No,No,No phone service,DSL,Yes,Yes,Yes,No,No,No,One year,No,Mailed check
-CLI-00103,72,18.6,1319.4,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00104,2,20.16,39.59,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00105,3,79.14,244.42,Male,0,Yes,Yes,Yes,No,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00106,4,18.62,73.53,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00107,13,30.78,402.67,Female,1,Yes,Yes,No,No phone service,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Mailed check
-CLI-00108,51,49.64,2606.17,Female,0,No,No,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00109,12,90.94,1120.75,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00110,64,111.23,6923.25,Male,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic)
-CLI-00111,69,101.22,6993.06,Male,0,Yes,Yes,Yes,No,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,One year,Yes,Bank transfer (automatic)
-CLI-00112,0,45.17,0.0,Female,0,Yes,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00113,2,28.8,58.3,Female,0,Yes,Yes,No,No phone service,DSL,Yes,No,No,No,No,No,Month-to-month,No,Credit card (automatic)
-CLI-00114,25,83.94,2077.84,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00115,13,20.05,257.96,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
-CLI-00116,1,50.4,48.9,Female,1,Yes,No,Yes,No,DSL,No,Yes,No,No,No,No,Month-to-month,No,Credit card (automatic)
-CLI-00117,17,19.81,327.38,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00118,22,105.06,2318.26,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,Yes,One year,Yes,Electronic check
-CLI-00119,43,31.94,1338.47,Male,1,Yes,No,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00120,11,70.25,758.96,Female,0,No,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,No,Yes,One year,No,Credit card (automatic)
-CLI-00121,36,88.17,3142.37,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00122,71,71.98,4978.87,Male,0,Yes,No,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,No,Two year,No,Credit card (automatic)
-CLI-00123,2,78.17,151.94,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00124,13,85.85,1144.64,Male,0,Yes,No,Yes,No,Fiber optic,Yes,No,No,Yes,No,No,Month-to-month,No,Bank transfer (automatic)
-CLI-00125,2,65.2,129.89,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00126,38,21.16,789.84,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Bank transfer (automatic)
-CLI-00127,45,52.32,2383.85,Female,0,No,No,Yes,No,DSL,Yes,No,Yes,No,No,No,Month-to-month,No,Credit card (automatic)
-CLI-00128,13,101.99,1286.85,Male,0,Yes,Yes,Yes,No,Fiber optic,Yes,No,No,Yes,Yes,Yes,One year,No,Electronic check
-CLI-00129,53,91.12,4755.48,Female,0,Yes,No,Yes,Yes,Fiber optic,No,No,No,Yes,No,Yes,One year,Yes,Electronic check
-CLI-00130,56,105.54,6073.63,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,No,Yes,One year,Yes,Credit card (automatic)
-CLI-00131,4,18.95,77.61,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00132,23,34.14,791.62,Female,0,No,Yes,No,No phone service,DSL,Yes,No,No,Yes,No,No,Two year,No,Bank transfer (automatic)
-CLI-00133,60,101.3,5929.65,Female,0,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,One year,No,Bank transfer (automatic)
-CLI-00134,24,65.09,1545.11,Female,1,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00135,52,67.08,3389.36,Male,0,Yes,Yes,Yes,Yes,DSL,No,No,Yes,Yes,Yes,No,One year,Yes,Electronic check
-CLI-00136,6,20.15,118.86,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00137,16,20.59,320.06,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00138,13,21.97,279.2,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check
-CLI-00139,62,116.48,7279.48,Male,0,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00140,4,20.26,79.1,Male,0,No,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00141,14,63.91,876.26,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,No,No,Yes,No,No,One year,Yes,Mailed check
-CLI-00142,28,79.2,2271.2,Male,1,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00143,13,20.92,269.27,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check
-CLI-00144,42,88.94,3698.05,Male,0,Yes,No,Yes,No,Fiber optic,Yes,Yes,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00145,28,62.61,1709.59,Male,0,Yes,Yes,Yes,Yes,DSL,No,Yes,No,No,No,Yes,Month-to-month,No,Electronic check
-CLI-00146,7,24.27,172.91,Female,0,No,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check
-CLI-00147,0,99.29,0.0,Female,0,No,No,Yes,No,Fiber optic,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00148,23,25.02,577.09,Female,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00149,61,20.59,1264.88,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic)
-CLI-00150,69,21.08,1419.64,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
-CLI-00151,3,73.65,217.77,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00152,20,68.76,1382.1,Female,0,No,Yes,Yes,Yes,DSL,Yes,No,No,No,No,Yes,Month-to-month,No,Electronic check
-CLI-00153,72,99.12,7330.28,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,Yes,One year,Yes,Electronic check
-CLI-00154,70,84.97,6061.08,Female,0,Yes,Yes,Yes,No,Fiber optic,Yes,Yes,Yes,No,No,No,One year,No,Bank transfer (automatic)
-CLI-00155,17,47.28,810.55,Female,0,No,No,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00156,36,84.15,3032.82,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00157,72,91.1,6368.38,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00158,1,93.15,95.33,Female,0,No,Yes,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00159,0,42.61,0.0,Female,1,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check
-CLI-00160,35,20.69,708.03,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Bank transfer (automatic)
-CLI-00161,69,65.97,4604.66,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,No,No,Two year,Yes,Credit card (automatic)
-CLI-00162,34,20.4,706.59,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00163,39,79.84,3167.29,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,No,Yes,Yes,One year,No,Bank transfer (automatic)
-CLI-00164,21,82.47,1726.92,Male,0,Yes,Yes,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,No,Electronic check
-CLI-00165,69,85.82,5806.84,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic)
-CLI-00166,22,21.31,455.75,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic)
-CLI-00167,5,88.46,451.62,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,No,Bank transfer (automatic)
-CLI-00168,69,23.84,1692.11,Female,0,Yes,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic)
-CLI-00169,60,108.72,6423.06,Male,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00170,49,58.28,2918.44,Male,0,No,No,No,No phone service,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00171,5,20.14,100.11,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check
-CLI-00172,28,92.56,2562.34,Female,0,No,No,Yes,No,Fiber optic,No,No,Yes,Yes,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00173,2,43.48,86.99,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
-CLI-00174,9,20.79,181.59,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic)
-CLI-00175,21,83.47,1746.85,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00176,71,21.55,1502.47,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00177,22,75.57,1683.73,Female,0,No,Yes,Yes,Yes,DSL,Yes,Yes,No,Yes,Yes,No,Month-to-month,Yes,Mailed check
-CLI-00178,32,102.43,3278.27,Female,0,Yes,No,Yes,No,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,One year,Yes,Electronic check
-CLI-00179,1,59.33,60.64,Female,0,No,No,Yes,No,DSL,No,No,Yes,No,Yes,No,Month-to-month,No,Electronic check
-CLI-00180,65,105.39,7013.38,Male,1,No,No,Yes,No,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Two year,Yes,Electronic check
-CLI-00181,72,68.96,4910.53,Female,0,Yes,No,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,Yes,One year,No,Bank transfer (automatic)
-CLI-00182,59,95.46,5557.93,Female,0,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00183,4,35.01,143.73,Female,0,No,No,No,No phone service,DSL,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00184,8,56.25,450.11,Female,0,No,No,Yes,No,DSL,Yes,No,Yes,No,No,No,Month-to-month,No,Credit card (automatic)
-CLI-00185,72,21.1,1482.42,Male,0,No,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00186,38,18.06,667.58,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00187,72,19.57,1450.5,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00188,38,80.4,3069.71,Male,0,Yes,Yes,Yes,Yes,DSL,No,Yes,Yes,No,Yes,Yes,One year,No,Credit card (automatic)
-CLI-00189,9,69.89,612.2,Female,0,No,Yes,Yes,No,DSL,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00190,14,23.32,326.7,Male,0,No,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check
-CLI-00191,18,58.4,1051.46,Female,0,No,Yes,Yes,Yes,DSL,Yes,No,No,No,No,No,Month-to-month,No,Mailed check
-CLI-00192,72,105.63,7575.88,Female,0,No,No,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check
-CLI-00193,6,86.93,535.7,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00194,69,89.98,6375.8,Male,0,Yes,No,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00195,53,54.01,2798.12,Female,0,No,No,No,No phone service,DSL,No,Yes,Yes,No,Yes,Yes,One year,Yes,Credit card (automatic)
-CLI-00196,61,88.53,5287.48,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00197,55,72.14,3945.68,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,No,No,No,Yes,Two year,No,Bank transfer (automatic)
-CLI-00198,22,21.2,475.75,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00199,15,80.4,1214.95,Female,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00200,69,120.78,8448.74,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00201,60,80.66,4861.69,Male,0,Yes,No,Yes,No,DSL,Yes,Yes,No,Yes,Yes,Yes,Two year,Yes,Mailed check
-CLI-00202,15,77.89,1148.02,Female,0,No,Yes,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00203,11,109.53,1227.8,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00204,72,116.48,8142.02,Female,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00205,10,75.98,768.85,Male,1,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00206,3,69.13,203.59,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00207,49,95.37,4665.02,Female,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,No,Month-to-month,No,Bank transfer (automatic)
-CLI-00208,72,63.51,4703.08,Male,1,Yes,No,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00209,49,102.8,5049.0,Female,0,Yes,No,Yes,No,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,No,Electronic check
-CLI-00210,38,39.18,1449.26,Female,1,No,No,No,No phone service,DSL,No,No,Yes,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00211,59,70.77,4157.59,Female,0,No,No,Yes,Yes,DSL,Yes,Yes,Yes,Yes,No,No,One year,Yes,Credit card (automatic)
-CLI-00212,16,35.63,575.56,Male,0,Yes,No,No,No phone service,DSL,Yes,No,Yes,No,No,No,Month-to-month,No,Mailed check
-CLI-00213,17,69.84,1155.7,Female,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00214,16,74.28,1170.84,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Mailed check
-CLI-00215,8,25.93,201.45,Male,0,No,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Credit card (automatic)
-CLI-00216,3,19.52,58.7,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic)
-CLI-00217,35,98.01,3405.96,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00218,23,79.14,1820.62,Male,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00219,13,69.48,892.18,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00220,7,49.64,350.75,Female,1,No,No,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00221,72,23.56,1663.05,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
-CLI-00222,63,86.74,5597.95,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Mailed check
-CLI-00223,3,48.01,148.01,Female,0,Yes,Yes,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00224,72,24.52,1764.7,Female,0,Yes,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic)
-CLI-00225,26,19.81,513.99,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
-CLI-00226,67,87.37,5980.1,Female,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00227,62,65.13,3987.14,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,Yes,Yes,No,No,Two year,No,Mailed check
-CLI-00228,18,56.35,1032.75,Female,0,No,No,Yes,Yes,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Mailed check
-CLI-00229,41,93.35,3778.51,Male,0,Yes,No,Yes,Yes,Fiber optic,Yes,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00230,19,72.44,1394.53,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00231,6,49.13,291.84,Female,0,No,No,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Mailed check
-CLI-00232,19,19.37,370.3,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00233,20,89.23,1830.2,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00234,3,64.35,187.89,Female,0,No,No,Yes,Yes,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00235,70,107.97,7697.23,Female,1,No,No,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
-CLI-00236,52,72.56,3782.59,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00237,5,52.44,260.3,Male,0,No,No,Yes,No,DSL,No,No,No,No,Yes,No,Month-to-month,No,Credit card (automatic)
-CLI-00238,16,67.46,1069.66,Male,0,Yes,Yes,Yes,Yes,DSL,No,Yes,Yes,Yes,No,No,Month-to-month,Yes,Mailed check
-CLI-00239,68,117.85,7806.76,Male,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,One year,No,Credit card (automatic)
-CLI-00240,44,77.93,3379.21,Female,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,No,Yes,One year,No,Credit card (automatic)
-CLI-00241,4,24.28,97.84,Female,0,No,Yes,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
-CLI-00242,10,77.2,753.36,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00243,43,68.6,2979.78,Female,0,No,No,Yes,No,DSL,Yes,Yes,No,No,Yes,No,Month-to-month,No,Mailed check
-CLI-00244,44,44.11,1994.67,Male,0,No,No,No,No phone service,DSL,No,No,Yes,Yes,No,Yes,One year,No,Electronic check
-CLI-00245,19,57.56,1125.19,Female,0,No,No,Yes,Yes,DSL,No,No,Yes,No,No,No,Month-to-month,Yes,Mailed check
-CLI-00246,15,48.99,752.01,Male,0,No,Yes,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00247,71,95.46,6902.35,Male,0,Yes,No,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00248,47,19.23,886.35,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00249,47,43.02,2078.98,Male,0,No,Yes,No,No phone service,DSL,Yes,Yes,No,No,Yes,No,One year,Yes,Bank transfer (automatic)
-CLI-00250,55,46.64,2519.45,Female,0,Yes,Yes,No,No phone service,DSL,Yes,Yes,Yes,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00251,21,94.24,2022.86,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,No,Mailed check
-CLI-00252,0,57.16,0.0,Female,0,No,No,Yes,No,DSL,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00253,60,84.09,5082.3,Male,0,No,No,Yes,No,DSL,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00254,0,90.96,0.0,Female,1,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00255,49,99.65,4795.08,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,No,Bank transfer (automatic)
-CLI-00256,59,101.9,6019.12,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,No,Bank transfer (automatic)
-CLI-00257,9,93.81,833.68,Female,0,No,No,Yes,No,Fiber optic,No,No,Yes,No,Yes,Yes,One year,No,Mailed check
-CLI-00258,1,74.07,72.41,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00259,15,18.78,275.42,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00260,71,24.21,1749.97,Female,0,Yes,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00261,71,109.94,8003.57,Female,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,Yes,One year,Yes,Bank transfer (automatic)
-CLI-00262,34,57.34,1907.67,Male,0,No,No,Yes,No,DSL,No,No,Yes,Yes,No,No,Month-to-month,Yes,Electronic check
-CLI-00263,10,88.82,862.26,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00264,16,76.88,1212.63,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Mailed check
-CLI-00265,24,55.51,1303.02,Female,0,No,Yes,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,No,Two year,No,Mailed check
-CLI-00266,2,88.76,174.2,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00267,20,32.53,653.85,Male,1,No,No,No,No phone service,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00268,0,81.48,0.0,Male,0,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00269,69,112.7,7743.28,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00270,19,19.33,360.78,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00271,7,57.49,406.4,Female,0,No,No,No,No phone service,DSL,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,No,Mailed check
-CLI-00272,36,54.68,1943.62,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,No,No,No,One year,No,Mailed check
-CLI-00273,38,97.87,3696.56,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00274,6,44.85,268.51,Female,1,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check
-CLI-00275,4,88.25,361.57,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00276,2,82.23,161.96,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,No,Electronic check
-CLI-00277,16,99.82,1618.07,Female,0,No,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,Yes,Credit card (automatic)
-CLI-00278,67,118.5,7848.69,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00279,26,58.18,1548.48,Male,0,Yes,No,Yes,No,DSL,Yes,No,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00280,13,99.33,1283.08,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00281,14,19.8,277.29,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00282,16,73.37,1200.49,Female,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00283,51,68.9,3550.32,Male,0,Yes,Yes,Yes,Yes,DSL,No,No,Yes,Yes,Yes,No,One year,Yes,Electronic check
-CLI-00284,34,104.43,3464.2,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00285,4,43.85,171.58,Female,0,No,No,No,No phone service,DSL,Yes,Yes,No,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00286,41,70.75,2986.16,Female,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,No,Yes,One year,No,Credit card (automatic)
-CLI-00287,18,36.83,644.21,Female,0,No,No,No,No phone service,DSL,No,Yes,No,No,No,Yes,Two year,Yes,Mailed check
-CLI-00288,39,91.26,3516.62,Male,0,Yes,No,Yes,No,Fiber optic,Yes,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00289,0,51.15,0.0,Male,0,No,No,Yes,No,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Electronic check
-CLI-00290,21,20.27,413.29,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00291,27,86.59,2290.43,Male,0,No,No,Yes,Yes,DSL,Yes,Yes,Yes,Yes,No,Yes,Month-to-month,No,Bank transfer (automatic)
-CLI-00292,56,56.1,3087.57,Male,0,No,No,No,No phone service,DSL,No,No,Yes,Yes,Yes,Yes,One year,No,Credit card (automatic)
-CLI-00293,69,106.22,7147.3,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,Yes,Credit card (automatic)
-CLI-00294,17,20.75,352.16,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check
-CLI-00295,37,77.89,2897.91,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Electronic check
-CLI-00296,29,73.7,2114.0,Male,0,No,No,Yes,No,DSL,No,No,Yes,Yes,Yes,Yes,One year,Yes,Bank transfer (automatic)
-CLI-00297,49,18.93,905.79,Female,1,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00298,9,34.4,315.38,Male,0,No,No,No,No phone service,DSL,No,No,No,No,Yes,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00299,49,100.5,5014.46,Female,0,No,No,Yes,No,Fiber optic,No,No,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
-CLI-00300,4,84.63,339.78,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00301,26,78.2,1989.01,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00302,70,68.16,4783.2,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,No,No,Two year,No,Bank transfer (automatic)
-CLI-00303,11,18.08,200.43,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00304,12,38.21,456.55,Female,0,No,Yes,No,No phone service,DSL,Yes,Yes,No,Yes,No,No,One year,No,Mailed check
-CLI-00305,67,85.32,5841.24,Male,0,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,No,Credit card (automatic)
-CLI-00306,57,86.2,4880.98,Female,0,Yes,Yes,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,One year,No,Bank transfer (automatic)
-CLI-00307,52,105.93,5511.96,Female,0,No,No,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,No,Yes,Two year,No,Mailed check
-CLI-00308,13,72.92,926.01,Female,1,Yes,Yes,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00309,53,100.11,5326.06,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,No,Electronic check
-CLI-00310,51,100.98,5232.31,Male,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,No,Yes,No,Yes,Yes,Month-to-month,No,Credit card (automatic)
-CLI-00311,22,44.84,1000.17,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00312,69,97.78,6648.44,Female,1,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,Yes,Electronic check
-CLI-00313,9,94.64,876.9,Male,0,No,Yes,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,No,Electronic check
-CLI-00314,3,19.2,58.36,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Credit card (automatic)
-CLI-00315,68,102.0,6904.27,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,Yes,Electronic check
-CLI-00316,7,56.99,396.89,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00317,40,98.06,3988.14,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00318,21,82.33,1695.29,Male,0,No,No,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00319,65,24.52,1607.15,Male,0,Yes,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00320,68,24.27,1672.03,Female,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Electronic check
-CLI-00321,64,20.57,1317.77,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
-CLI-00322,15,87.49,1341.74,Female,0,Yes,Yes,Yes,No,Fiber optic,Yes,No,No,Yes,Yes,No,Month-to-month,No,Electronic check
-CLI-00323,22,21.61,474.53,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
-CLI-00324,37,21.79,804.53,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00325,5,42.12,207.88,Male,1,No,No,No,No phone service,DSL,No,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00326,65,93.6,6237.09,Female,0,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,One year,No,Bank transfer (automatic)
-CLI-00327,38,20.25,761.02,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Electronic check
-CLI-00328,69,112.15,7829.01,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00329,72,107.96,7730.84,Male,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
-CLI-00330,71,70.03,5102.03,Male,0,Yes,No,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,No,Two year,No,Bank transfer (automatic)
-CLI-00331,34,84.33,2944.28,Male,0,Yes,No,Yes,Yes,DSL,No,No,Yes,Yes,Yes,Yes,One year,Yes,Mailed check
-CLI-00332,36,20.5,717.19,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00333,39,51.04,2049.62,Male,1,Yes,No,No,No phone service,DSL,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00334,8,79.0,635.98,Female,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00335,2,42.29,82.42,Female,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Mailed check
-CLI-00336,11,57.76,635.25,Female,0,Yes,Yes,Yes,No,DSL,No,No,Yes,Yes,No,No,Month-to-month,No,Credit card (automatic)
-CLI-00337,28,75.13,2046.78,Female,0,No,No,Yes,Yes,DSL,No,No,No,No,Yes,Yes,One year,Yes,Credit card (automatic)
-CLI-00338,0,47.02,0.0,Male,1,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check
-CLI-00339,5,76.94,377.44,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00340,11,101.97,1112.78,Female,0,No,No,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00341,10,76.46,755.64,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00342,52,51.0,2668.26,Female,1,No,No,No,No phone service,DSL,No,Yes,Yes,Yes,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00343,0,84.64,0.0,Female,0,No,Yes,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00344,13,95.62,1275.62,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00345,54,82.31,4399.1,Female,0,No,No,Yes,Yes,Fiber optic,Yes,No,Yes,No,No,No,One year,Yes,Credit card (automatic)
-CLI-00346,66,108.24,7173.71,Female,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,One year,Yes,Credit card (automatic)
-CLI-00347,60,22.99,1338.51,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00348,22,82.36,1798.02,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00349,16,78.53,1291.21,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,No,Electronic check
-CLI-00350,8,93.95,734.41,Female,1,No,No,Yes,No,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00351,22,88.24,1984.36,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00352,1,53.24,53.73,Female,0,No,No,No,No phone service,DSL,No,Yes,No,No,Yes,Yes,Month-to-month,No,Electronic check
-CLI-00353,34,92.97,3121.89,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00354,10,18.77,190.83,Female,0,No,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00355,58,102.39,5863.54,Male,0,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Two year,No,Electronic check
-CLI-00356,16,56.82,930.66,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,Yes,No,No,Month-to-month,No,Bank transfer (automatic)
-CLI-00357,4,72.65,283.32,Male,1,No,No,Yes,No,Fiber optic,No,No,No,Yes,No,No,Month-to-month,No,Electronic check
-CLI-00358,25,19.36,472.94,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check
-CLI-00359,24,20.4,496.94,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Mailed check
-CLI-00360,43,78.49,3364.78,Male,0,Yes,Yes,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Mailed check
-CLI-00361,60,106.95,6281.27,Female,1,No,No,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,No,Yes,Two year,No,Credit card (automatic)
-CLI-00362,63,62.03,3911.04,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,Yes,No,No,No,Two year,No,Bank transfer (automatic)
-CLI-00363,21,99.23,2058.45,Male,1,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00364,70,108.51,7618.18,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00365,72,80.62,5889.52,Male,0,Yes,No,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
-CLI-00366,65,84.72,5624.7,Male,0,Yes,Yes,Yes,No,Fiber optic,Yes,Yes,No,No,No,No,One year,Yes,Credit card (automatic)
-CLI-00367,6,19.29,112.68,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic)
-CLI-00368,35,101.55,3573.95,Female,0,Yes,Yes,Yes,No,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00369,49,90.86,4581.34,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,No,Electronic check
-CLI-00370,10,19.75,197.02,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check
-CLI-00371,18,82.54,1509.75,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00372,0,90.8,0.0,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00373,69,116.34,8207.36,Male,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,One year,Yes,Electronic check
-CLI-00374,48,24.14,1164.42,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
-CLI-00375,56,97.49,5586.62,Male,1,No,Yes,Yes,No,Fiber optic,Yes,No,No,No,Yes,Yes,One year,No,Credit card (automatic)
-CLI-00376,27,80.92,2222.48,Female,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,Yes,One year,No,Bank transfer (automatic)
-CLI-00377,51,89.22,4651.03,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,No,Bank transfer (automatic)
-CLI-00378,53,93.51,4824.39,Male,1,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00379,46,81.48,3796.55,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,No,Month-to-month,No,Mailed check
-CLI-00380,10,18.79,184.48,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00381,4,45.42,179.13,Female,1,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
-CLI-00382,1,57.3,56.7,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,Yes,Month-to-month,No,Mailed check
-CLI-00383,7,94.98,668.5,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Mailed check
-CLI-00384,72,105.22,7633.96,Female,0,Yes,Yes,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00385,49,31.16,1566.36,Male,0,Yes,No,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00386,22,70.81,1512.27,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Electronic check
-CLI-00387,0,23.76,0.0,Female,0,No,No,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
-CLI-00388,8,80.43,638.11,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00389,17,54.65,946.78,Male,0,No,No,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00390,0,73.66,0.0,Male,1,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Electronic check
-CLI-00391,57,76.71,4375.62,Male,0,No,No,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,One year,No,Mailed check
-CLI-00392,18,20.77,379.7,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Credit card (automatic)
-CLI-00393,0,77.14,0.0,Male,0,No,No,Yes,No,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00394,1,78.61,77.62,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00395,23,23.93,536.76,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00396,41,69.83,2856.55,Female,0,No,No,Yes,No,DSL,Yes,Yes,No,Yes,No,Yes,One year,Yes,Mailed check
-CLI-00397,15,20.14,308.99,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00398,42,20.13,850.44,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
-CLI-00399,42,19.33,790.1,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00400,29,21.51,621.55,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00401,6,83.42,497.05,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00402,43,18.93,818.02,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Electronic check
-CLI-00403,1,76.91,77.31,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00404,25,82.17,2109.88,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,One year,Yes,Mailed check
-CLI-00405,41,26.34,1069.45,Male,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
-CLI-00406,35,26.31,915.77,Male,0,No,No,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00407,61,19.11,1173.65,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00408,53,110.23,5977.63,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check
-CLI-00409,40,68.53,2775.1,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,One year,Yes,Bank transfer (automatic)
-CLI-00410,23,18.44,423.38,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00411,70,91.41,6519.47,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No,No,One year,Yes,Credit card (automatic)
-CLI-00412,22,67.08,1474.46,Female,1,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00413,40,19.42,798.4,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Credit card (automatic)
-CLI-00414,7,71.26,492.31,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00415,68,24.03,1597.51,Male,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
-CLI-00416,72,19.25,1413.48,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
-CLI-00417,72,119.0,8463.8,Female,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Electronic check
-CLI-00418,41,110.89,4641.26,Female,0,Yes,No,Yes,No,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,One year,Yes,Credit card (automatic)
-CLI-00419,3,106.41,321.33,Female,0,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00420,3,86.82,260.6,Female,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Mailed check
-CLI-00421,67,100.89,6592.14,Female,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00422,1,89.49,91.03,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00423,3,57.94,169.29,Male,0,No,No,Yes,Yes,DSL,Yes,Yes,No,No,No,No,Month-to-month,No,Electronic check
-CLI-00424,7,111.18,799.98,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00425,66,87.83,5927.89,Female,0,No,No,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check
-CLI-00426,27,20.12,536.82,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00427,71,96.42,6692.97,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,No,Yes,Two year,Yes,Credit card (automatic)
-CLI-00428,9,75.84,698.35,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00429,0,78.52,0.0,Female,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00430,3,47.47,139.2,Female,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
-CLI-00431,27,56.69,1530.49,Male,0,Yes,No,Yes,No,DSL,Yes,Yes,No,Yes,No,No,Month-to-month,No,Mailed check
-CLI-00432,1,96.29,94.83,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00433,21,87.37,1824.62,Male,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Mailed check
-CLI-00434,56,20.47,1155.97,Male,0,No,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
-CLI-00435,41,62.53,2627.62,Female,0,Yes,Yes,Yes,No,DSL,No,Yes,No,Yes,No,Yes,One year,Yes,Bank transfer (automatic)
-CLI-00436,72,19.44,1424.95,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
-CLI-00437,2,38.05,74.55,Male,1,Yes,No,No,No phone service,DSL,No,No,No,No,Yes,No,Month-to-month,Yes,Mailed check
-CLI-00438,20,49.24,983.46,Female,0,No,Yes,Yes,No,DSL,No,No,No,Yes,No,No,One year,Yes,Electronic check
-CLI-00439,16,19.57,312.97,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
-CLI-00440,37,21.37,813.91,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic)
-CLI-00441,56,101.48,5542.02,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00442,16,90.64,1451.18,Female,1,No,No,Yes,No,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00443,36,52.84,1949.53,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,No,No,No,One year,No,Mailed check
-CLI-00444,8,18.89,150.2,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check
-CLI-00445,68,96.92,6496.34,Female,0,No,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00446,7,56.43,396.34,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,No,No,No,Month-to-month,No,Credit card (automatic)
-CLI-00447,0,47.38,0.0,Female,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
-CLI-00448,15,93.93,1445.05,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00449,66,114.05,7339.78,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
-CLI-00450,67,77.44,5097.18,Male,1,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,No,Two year,No,Credit card (automatic)
-CLI-00451,8,79.84,622.77,Female,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00452,69,20.4,1425.5,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00453,40,42.88,1693.91,Male,0,Yes,No,No,No phone service,DSL,Yes,Yes,Yes,No,No,No,One year,Yes,Electronic check
-CLI-00454,24,51.81,1273.3,Female,0,No,No,Yes,No,DSL,No,No,Yes,No,No,No,Month-to-month,No,Credit card (automatic)
-CLI-00455,42,51.36,2208.07,Female,0,Yes,Yes,No,No phone service,DSL,No,Yes,Yes,Yes,No,Yes,One year,No,Bank transfer (automatic)
-CLI-00456,72,85.62,6326.05,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Mailed check
-CLI-00457,50,55.94,2756.07,Male,0,No,Yes,Yes,No,DSL,Yes,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00458,53,20.62,1060.12,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
-CLI-00459,24,85.84,2046.27,Female,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00460,25,88.25,2267.48,Male,0,Yes,Yes,Yes,No,Fiber optic,No,Yes,Yes,Yes,No,No,One year,No,Mailed check
-CLI-00461,9,42.51,388.64,Female,0,No,No,No,No phone service,DSL,Yes,Yes,Yes,No,No,No,Month-to-month,No,Bank transfer (automatic)
-CLI-00462,0,19.41,0.0,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00463,55,67.22,3742.04,Female,0,Yes,Yes,Yes,Yes,DSL,No,Yes,No,No,Yes,No,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00464,61,96.4,6027.55,Female,0,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,No,Month-to-month,No,Electronic check
-CLI-00465,9,19.78,183.02,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Credit card (automatic)
-CLI-00466,55,23.76,1323.74,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
-CLI-00467,33,91.68,3091.33,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00468,12,95.3,1167.05,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00469,9,25.91,231.21,Female,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00470,27,99.62,2625.03,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00471,59,37.42,2237.91,Male,0,No,No,No,No phone service,DSL,Yes,Yes,Yes,No,No,No,Two year,No,Bank transfer (automatic)
-CLI-00472,0,20.52,0.0,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check
-CLI-00473,7,21.66,150.57,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00474,4,93.19,383.85,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00475,5,76.23,382.52,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
-CLI-00476,40,32.02,1282.47,Female,0,Yes,No,No,No phone service,DSL,No,Yes,No,Yes,No,No,One year,No,Mailed check
-CLI-00477,17,26.12,455.97,Female,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
-CLI-00478,12,101.57,1203.05,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
-CLI-00479,36,67.5,2502.82,Male,0,No,Yes,Yes,No,DSL,No,No,No,Yes,Yes,Yes,One year,Yes,Mailed check
-CLI-00480,66,20.02,1353.98,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00481,18,73.21,1307.02,Female,0,Yes,Yes,Yes,No,DSL,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,No,Bank transfer (automatic)
-CLI-00482,71,103.51,7273.03,Male,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No,Yes,Two year,No,Credit card (automatic)
-CLI-00483,5,36.7,179.39,Female,0,Yes,Yes,No,No phone service,DSL,Yes,No,No,Yes,No,No,Month-to-month,No,Mailed check
-CLI-00484,5,19.41,99.47,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
-CLI-00485,67,94.44,6208.2,Female,0,Yes,No,Yes,No,Fiber optic,Yes,No,Yes,No,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00486,22,94.78,2023.73,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,Yes,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
-CLI-00487,65,89.4,5947.0,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00488,2,83.63,168.24,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Mailed check
-CLI-00489,66,89.86,5991.91,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Electronic check
-CLI-00490,29,70.66,2077.8,Female,1,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00491,59,63.57,3647.71,Female,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,No,No,Two year,Yes,Credit card (automatic)
-CLI-00492,46,75.31,3379.42,Female,1,Yes,Yes,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Bank transfer (automatic)
-CLI-00493,72,93.31,6718.25,Female,1,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
-CLI-00494,44,18.97,812.16,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
-CLI-00495,7,72.03,504.34,Male,0,Yes,No,Yes,Yes,DSL,No,Yes,Yes,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
-CLI-00496,5,48.09,243.86,Male,0,No,Yes,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00497,22,46.72,1037.55,Female,0,Yes,Yes,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00498,21,72.91,1541.83,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
-CLI-00499,64,20.46,1273.8,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
-CLI-00500,63,97.27,6031.18,Male,1,No,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,One year,No,Electronic check
+customerID,nome,tenure,MonthlyCharges,TotalCharges,gender,SeniorCitizen,Partner,Dependents,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod
+CLI-00001,Felipe Dias,31,19.54,604.13,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00002,Mateus Queiroz,18,66.11,1201.53,Male,0,No,No,Yes,Yes,DSL,Yes,No,No,No,No,Yes,Month-to-month,No,Bank transfer (automatic)
+CLI-00003,Enzo Teixeira,34,56.12,1908.98,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,Yes,No,No,No,One year,Yes,Mailed check
+CLI-00004,Júlia Almeida,59,19.34,1118.15,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00005,Vinícius Esteves,16,83.27,1303.47,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,No,Yes,No,Month-to-month,No,Electronic check
+CLI-00006,Rafaela Duarte,39,95.97,3694.44,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00007,Caio Barbosa,23,98.42,2202.87,Female,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,One year,Yes,Mailed check
+CLI-00008,Caio Dias,46,20.71,936.46,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00009,Letícia Farias,20,96.35,1884.23,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,No,Mailed check
+CLI-00010,Yasmin Vasconcelos,21,90.59,1898.37,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Mailed check
+CLI-00011,Priscila Nogueira,55,65.72,3583.48,Female,1,No,No,Yes,No,DSL,Yes,No,Yes,Yes,Yes,No,Two year,No,Bank transfer (automatic)
+CLI-00012,Felipe Ribeiro,52,51.63,2698.75,Male,1,Yes,No,Yes,No,DSL,No,Yes,No,No,No,No,Two year,No,Mailed check
+CLI-00013,Samuel Xavier,45,19.2,852.64,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Electronic check
+CLI-00014,Yasmin Hoffmann,13,83.91,1060.32,Female,0,No,No,Yes,Yes,Fiber optic,No,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00015,Priscila Dias,40,84.97,3364.36,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,Yes,No,Yes,One year,Yes,Credit card (automatic)
+CLI-00016,Nicolas Freitas,15,70.27,1070.19,Female,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,No,One year,Yes,Mailed check
+CLI-00017,João Xavier,3,52.32,154.66,Male,0,No,No,Yes,No,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00018,Tatiane Ribeiro,18,47.85,856.37,Male,0,No,No,Yes,No,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Mailed check
+CLI-00019,Thiago Freitas,69,115.0,8056.39,Male,0,No,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check
+CLI-00020,Otávio Santos,70,67.98,4731.96,Male,0,Yes,No,Yes,No,DSL,Yes,Yes,Yes,Yes,No,No,Two year,No,Credit card (automatic)
+CLI-00021,Yasmin Siqueira,18,101.68,1872.75,Female,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00022,Felipe Ferreira,2,71.28,146.14,Female,0,No,No,Yes,No,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00023,Mariana Santos,26,84.03,2159.94,Male,1,Yes,No,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00024,Natália Queiroz,70,79.14,5618.23,Male,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,No,Two year,Yes,Bank transfer (automatic)
+CLI-00025,Yasmin Macedo,16,84.6,1333.55,Male,0,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00026,Thiago Teixeira,67,81.54,5345.02,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Two year,Yes,Credit card (automatic)
+CLI-00027,Júlia Gomes,6,40.86,244.25,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00028,Enzo Freitas,44,91.99,4072.45,Female,1,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,Yes,One year,No,Credit card (automatic)
+CLI-00029,Renato Pacheco,41,102.21,4300.13,Male,1,No,No,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00030,Vanessa Dias,51,51.91,2591.16,Female,0,Yes,No,No,No phone service,DSL,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00031,Igor Hoffmann,39,20.8,821.54,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00032,Ana Cardoso,6,107.91,646.51,Female,0,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00033,Vanessa Duarte,25,23.85,583.07,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00034,Mariana Pereira,72,90.19,6677.84,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00035,João Esteves,65,112.41,7392.47,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,Two year,No,Credit card (automatic)
+CLI-00036,Priscila Xavier,70,80.99,5543.05,Male,1,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00037,Diego Ferreira,56,55.67,3193.42,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,Yes,No,No,Two year,No,Bank transfer (automatic)
+CLI-00038,Débora Duarte,44,115.63,4966.56,Female,0,No,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
+CLI-00039,Yasmin Gomes,1,58.52,57.09,Female,1,No,No,Yes,Yes,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00040,Fernanda Almeida,51,25.33,1278.77,Female,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00041,Gabriela Ferreira,8,72.16,592.45,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,No,Yes,No,Yes,Two year,Yes,Credit card (automatic)
+CLI-00042,Samuel Macedo,0,19.02,0.0,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00043,Leonardo Queiroz,59,21.62,1307.59,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00044,Nicolas Duarte,0,31.98,0.0,Male,0,No,Yes,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Mailed check
+CLI-00045,Gustavo Moreira,65,72.63,4598.31,Female,0,Yes,Yes,Yes,Yes,DSL,No,No,No,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00046,Leonardo Macedo,21,103.53,2183.08,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,No,Yes,Yes,No,Month-to-month,No,Mailed check
+CLI-00047,Renato Almeida,47,121.38,5690.75,Male,0,No,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,One year,No,Credit card (automatic)
+CLI-00048,Mariana Esteves,42,85.57,3607.74,Female,0,No,No,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic)
+CLI-00049,Ana Siqueira,14,108.92,1546.58,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00050,Diego Pereira,10,64.88,655.75,Male,0,Yes,No,Yes,Yes,DSL,Yes,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00051,Natália Moreira,30,80.56,2488.9,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00052,Priscila Barbosa,72,104.81,7390.87,Male,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,Two year,Yes,Electronic check
+CLI-00053,Vinícius Almeida,4,88.09,358.97,Female,1,No,No,Yes,No,Fiber optic,No,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00054,Henrique Monteiro,65,20.62,1333.15,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00055,Carla Teixeira,72,26.19,1917.73,Male,1,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
+CLI-00056,Ana Lima,72,24.06,1773.04,Female,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00057,Thiago Lima,6,78.73,486.32,Male,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00058,Mariana Cardoso,65,89.58,5740.96,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Mailed check
+CLI-00059,Letícia Esteves,44,88.89,3900.12,Female,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00060,Ana Monteiro,20,64.57,1325.71,Female,1,No,No,Yes,Yes,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Mailed check
+CLI-00061,Ana Queiroz,68,77.41,5404.66,Male,0,Yes,No,Yes,Yes,DSL,Yes,No,No,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00062,Samuel Dias,13,65.35,843.07,Male,0,No,Yes,Yes,No,DSL,No,No,No,No,Yes,Yes,Month-to-month,No,Credit card (automatic)
+CLI-00063,Gustavo Rocha,65,84.56,5641.57,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,Yes,Mailed check
+CLI-00064,Yasmin Ferreira,62,107.28,6613.8,Male,0,Yes,No,Yes,No,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00065,Sabrina Barbosa,14,88.65,1231.77,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,No,Month-to-month,No,Electronic check
+CLI-00066,Felipe Teixeira,24,73.82,1798.96,Male,1,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00067,Priscila Duarte,39,100.0,3893.26,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,No,One year,Yes,Credit card (automatic)
+CLI-00068,Leonardo Almeida,31,79.33,2451.59,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,Yes,No,No,Two year,No,Bank transfer (automatic)
+CLI-00069,Rafaela Freitas,15,86.67,1291.17,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00070,Caio Ferreira,34,26.64,902.11,Female,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00071,Igor Cardoso,33,91.35,2949.4,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,No,Electronic check
+CLI-00072,Igor Almeida,60,99.68,5823.28,Female,1,Yes,No,Yes,Yes,Fiber optic,Yes,No,Yes,No,Yes,Yes,One year,Yes,Electronic check
+CLI-00073,Olívia Lima,52,25.69,1356.24,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00074,Thiago Rocha,33,63.62,2107.58,Female,0,Yes,No,Yes,Yes,DSL,Yes,No,No,Yes,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00075,Helena Queiroz,1,21.39,21.61,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic)
+CLI-00076,Lucas Monteiro,6,76.3,466.1,Female,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,No,Electronic check
+CLI-00077,Thiago Gomes,72,91.65,6491.94,Male,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,Yes,Two year,Yes,Electronic check
+CLI-00078,João Lima,14,78.79,1085.44,Male,0,No,Yes,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00079,Vinícius Hoffmann,49,93.69,4529.64,Male,1,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,One year,Yes,Electronic check
+CLI-00080,Rafaela Siqueira,37,38.76,1417.25,Male,0,No,No,No,No phone service,DSL,No,No,No,Yes,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00081,Olívia Farias,72,81.85,5985.38,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,No,Yes,Two year,No,Credit card (automatic)
+CLI-00082,Beatriz Macedo,1,73.99,73.43,Female,0,No,No,Yes,No,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00083,Thiago Pereira,8,78.2,618.96,Female,1,No,No,Yes,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00084,Letícia Lima,15,90.45,1367.85,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,No,Electronic check
+CLI-00085,Yasmin Rocha,1,74.8,73.39,Male,0,No,Yes,Yes,No,DSL,No,No,No,Yes,Yes,Yes,Month-to-month,No,Mailed check
+CLI-00086,Renato Barbosa,7,66.7,455.87,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,Yes,No,Yes,No,One year,No,Electronic check
+CLI-00087,Eduarda Barbosa,14,20.75,293.94,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Mailed check
+CLI-00088,Caio Oliveira,6,66.37,404.35,Male,1,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00089,Gabriela Monteiro,48,20.17,956.33,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00090,Mariana Rocha,71,18.27,1307.76,Female,1,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic)
+CLI-00091,Lucas Santos,12,66.81,779.31,Male,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00092,Diego Xavier,3,22.83,68.1,Male,0,Yes,No,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00093,Sabrina Moreira,2,83.13,167.04,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00094,Renato Campos,60,40.34,2384.59,Male,0,No,Yes,No,No phone service,DSL,Yes,Yes,No,Yes,No,No,One year,Yes,Bank transfer (automatic)
+CLI-00095,Débora Vasconcelos,36,97.22,3468.05,Female,0,No,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00096,Henrique Esteves,64,103.73,6682.36,Female,1,Yes,No,Yes,No,Fiber optic,Yes,Yes,Yes,No,No,Yes,One year,No,Bank transfer (automatic)
+CLI-00097,Helena Pereira,32,89.63,2883.63,Female,0,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00098,Vinícius Freitas,64,56.99,3571.68,Female,0,Yes,Yes,Yes,Yes,DSL,No,Yes,No,No,No,No,One year,Yes,Bank transfer (automatic)
+CLI-00099,Igor Duarte,2,86.71,175.57,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00100,Gabriela Campos,72,67.39,4729.82,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,Yes,Yes,No,Two year,No,Bank transfer (automatic)
+CLI-00101,Caio Almeida,21,19.24,415.43,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Mailed check
+CLI-00102,Carla Nogueira,8,37.47,294.41,Male,0,No,No,No,No phone service,DSL,Yes,Yes,Yes,No,No,No,One year,No,Mailed check
+CLI-00103,Gustavo Esteves,72,18.6,1319.4,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00104,Caio Siqueira,2,20.16,39.59,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00105,Felipe Esteves,3,79.14,244.42,Male,0,Yes,Yes,Yes,No,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00106,Vanessa Gomes,4,18.62,73.53,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00107,Letícia Barbosa,13,30.78,402.67,Female,1,Yes,Yes,No,No phone service,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Mailed check
+CLI-00108,Gustavo Pacheco,51,49.64,2606.17,Female,0,No,No,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00109,Nicolas Vasconcelos,12,90.94,1120.75,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00110,Isabela Esteves,64,111.23,6923.25,Male,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic)
+CLI-00111,Beatriz Cardoso,69,101.22,6993.06,Male,0,Yes,Yes,Yes,No,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,One year,Yes,Bank transfer (automatic)
+CLI-00112,João Vasconcelos,0,45.17,0.0,Female,0,Yes,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00113,Olívia Gomes,2,28.8,58.3,Female,0,Yes,Yes,No,No phone service,DSL,Yes,No,No,No,No,No,Month-to-month,No,Credit card (automatic)
+CLI-00114,Ana Barbosa,25,83.94,2077.84,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00115,Gustavo Dias,13,20.05,257.96,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
+CLI-00116,Karina Vasconcelos,1,50.4,48.9,Female,1,Yes,No,Yes,No,DSL,No,Yes,No,No,No,No,Month-to-month,No,Credit card (automatic)
+CLI-00117,Gabriela Macedo,17,19.81,327.38,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00118,Vinícius Xavier,22,105.06,2318.26,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,Yes,One year,Yes,Electronic check
+CLI-00119,Felipe Macedo,43,31.94,1338.47,Male,1,Yes,No,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00120,Diego Dias,11,70.25,758.96,Female,0,No,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,No,Yes,One year,No,Credit card (automatic)
+CLI-00121,Isabela Lima,36,88.17,3142.37,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00122,Sabrina Oliveira,71,71.98,4978.87,Male,0,Yes,No,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,No,Two year,No,Credit card (automatic)
+CLI-00123,Eduarda Duarte,2,78.17,151.94,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00124,Débora Dias,13,85.85,1144.64,Male,0,Yes,No,Yes,No,Fiber optic,Yes,No,No,Yes,No,No,Month-to-month,No,Bank transfer (automatic)
+CLI-00125,Diego Cardoso,2,65.2,129.89,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00126,Sabrina Santos,38,21.16,789.84,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Bank transfer (automatic)
+CLI-00127,Igor Farias,45,52.32,2383.85,Female,0,No,No,Yes,No,DSL,Yes,No,Yes,No,No,No,Month-to-month,No,Credit card (automatic)
+CLI-00128,Rafaela Moreira,13,101.99,1286.85,Male,0,Yes,Yes,Yes,No,Fiber optic,Yes,No,No,Yes,Yes,Yes,One year,No,Electronic check
+CLI-00129,Otávio Barbosa,53,91.12,4755.48,Female,0,Yes,No,Yes,Yes,Fiber optic,No,No,No,Yes,No,Yes,One year,Yes,Electronic check
+CLI-00130,Leonardo Freitas,56,105.54,6073.63,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,No,Yes,One year,Yes,Credit card (automatic)
+CLI-00131,Vanessa Moreira,4,18.95,77.61,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00132,Letícia Queiroz,23,34.14,791.62,Female,0,No,Yes,No,No phone service,DSL,Yes,No,No,Yes,No,No,Two year,No,Bank transfer (automatic)
+CLI-00133,Natália Barbosa,60,101.3,5929.65,Female,0,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,One year,No,Bank transfer (automatic)
+CLI-00134,Fernanda Rocha,24,65.09,1545.11,Female,1,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00135,Otávio Campos,52,67.08,3389.36,Male,0,Yes,Yes,Yes,Yes,DSL,No,No,Yes,Yes,Yes,No,One year,Yes,Electronic check
+CLI-00136,Helena Hoffmann,6,20.15,118.86,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00137,Diego Freitas,16,20.59,320.06,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00138,Ana Dias,13,21.97,279.2,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check
+CLI-00139,Bruno Nogueira,62,116.48,7279.48,Male,0,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00140,Lucas Queiroz,4,20.26,79.1,Male,0,No,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00141,Débora Lima,14,63.91,876.26,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,No,No,Yes,No,No,One year,Yes,Mailed check
+CLI-00142,Caio Teixeira,28,79.2,2271.2,Male,1,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00143,Helena Teixeira,13,20.92,269.27,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check
+CLI-00144,Bruno Gomes,42,88.94,3698.05,Male,0,Yes,No,Yes,No,Fiber optic,Yes,Yes,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00145,Mateus Vasconcelos,28,62.61,1709.59,Male,0,Yes,Yes,Yes,Yes,DSL,No,Yes,No,No,No,Yes,Month-to-month,No,Electronic check
+CLI-00146,Lucas Nogueira,7,24.27,172.91,Female,0,No,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check
+CLI-00147,Felipe Freitas,0,99.29,0.0,Female,0,No,No,Yes,No,Fiber optic,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00148,Gustavo Oliveira,23,25.02,577.09,Female,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00149,Igor Santos,61,20.59,1264.88,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic)
+CLI-00150,Caio Xavier,69,21.08,1419.64,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
+CLI-00151,Letícia Ribeiro,3,73.65,217.77,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00152,Rafaela Hoffmann,20,68.76,1382.1,Female,0,No,Yes,Yes,Yes,DSL,Yes,No,No,No,No,Yes,Month-to-month,No,Electronic check
+CLI-00153,Mariana Siqueira,72,99.12,7330.28,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,Yes,One year,Yes,Electronic check
+CLI-00154,Henrique Cardoso,70,84.97,6061.08,Female,0,Yes,Yes,Yes,No,Fiber optic,Yes,Yes,Yes,No,No,No,One year,No,Bank transfer (automatic)
+CLI-00155,Fernanda Macedo,17,47.28,810.55,Female,0,No,No,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00156,Diego Santos,36,84.15,3032.82,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00157,Débora Freitas,72,91.1,6368.38,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00158,Natália Campos,1,93.15,95.33,Female,0,No,Yes,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00159,Lucas Vasconcelos,0,42.61,0.0,Female,1,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check
+CLI-00160,Gustavo Duarte,35,20.69,708.03,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Bank transfer (automatic)
+CLI-00161,Igor Campos,69,65.97,4604.66,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,No,No,Two year,Yes,Credit card (automatic)
+CLI-00162,Diego Lima,34,20.4,706.59,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00163,Olívia Xavier,39,79.84,3167.29,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,No,Yes,Yes,One year,No,Bank transfer (automatic)
+CLI-00164,Priscila Macedo,21,82.47,1726.92,Male,0,Yes,Yes,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,No,Electronic check
+CLI-00165,Vinícius Rocha,69,85.82,5806.84,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Bank transfer (automatic)
+CLI-00166,Henrique Nogueira,22,21.31,455.75,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic)
+CLI-00167,Igor Pacheco,5,88.46,451.62,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,No,Bank transfer (automatic)
+CLI-00168,Felipe Moreira,69,23.84,1692.11,Female,0,Yes,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic)
+CLI-00169,Igor Rocha,60,108.72,6423.06,Male,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00170,Júlia Santos,49,58.28,2918.44,Male,0,No,No,No,No phone service,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00171,Eduarda Campos,5,20.14,100.11,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check
+CLI-00172,Henrique Pereira,28,92.56,2562.34,Female,0,No,No,Yes,No,Fiber optic,No,No,Yes,Yes,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00173,Vanessa Santos,2,43.48,86.99,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
+CLI-00174,Lucas Barbosa,9,20.79,181.59,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic)
+CLI-00175,Karina Santos,21,83.47,1746.85,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00176,Priscila Freitas,71,21.55,1502.47,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00177,Isabela Moreira,22,75.57,1683.73,Female,0,No,Yes,Yes,Yes,DSL,Yes,Yes,No,Yes,Yes,No,Month-to-month,Yes,Mailed check
+CLI-00178,Gustavo Freitas,32,102.43,3278.27,Female,0,Yes,No,Yes,No,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,One year,Yes,Electronic check
+CLI-00179,Vinícius Queiroz,1,59.33,60.64,Female,0,No,No,Yes,No,DSL,No,No,Yes,No,Yes,No,Month-to-month,No,Electronic check
+CLI-00180,Rafaela Pacheco,65,105.39,7013.38,Male,1,No,No,Yes,No,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Two year,Yes,Electronic check
+CLI-00181,Beatriz Dias,72,68.96,4910.53,Female,0,Yes,No,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,Yes,One year,No,Bank transfer (automatic)
+CLI-00182,Beatriz Pacheco,59,95.46,5557.93,Female,0,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00183,Otávio Nogueira,4,35.01,143.73,Female,0,No,No,No,No phone service,DSL,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00184,Renato Cardoso,8,56.25,450.11,Female,0,No,No,Yes,No,DSL,Yes,No,Yes,No,No,No,Month-to-month,No,Credit card (automatic)
+CLI-00185,Leonardo Vasconcelos,72,21.1,1482.42,Male,0,No,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00186,Ana Pereira,38,18.06,667.58,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00187,Paulo Oliveira,72,19.57,1450.5,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00188,Karina Monteiro,38,80.4,3069.71,Male,0,Yes,Yes,Yes,Yes,DSL,No,Yes,Yes,No,Yes,Yes,One year,No,Credit card (automatic)
+CLI-00189,Otávio Dias,9,69.89,612.2,Female,0,No,Yes,Yes,No,DSL,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00190,Letícia Vasconcelos,14,23.32,326.7,Male,0,No,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check
+CLI-00191,Henrique Oliveira,18,58.4,1051.46,Female,0,No,Yes,Yes,Yes,DSL,Yes,No,No,No,No,No,Month-to-month,No,Mailed check
+CLI-00192,Lucas Ribeiro,72,105.63,7575.88,Female,0,No,No,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check
+CLI-00193,Felipe Queiroz,6,86.93,535.7,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00194,Eduarda Dias,69,89.98,6375.8,Male,0,Yes,No,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00195,Priscila Ribeiro,53,54.01,2798.12,Female,0,No,No,No,No phone service,DSL,No,Yes,Yes,No,Yes,Yes,One year,Yes,Credit card (automatic)
+CLI-00196,Lucas Pacheco,61,88.53,5287.48,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00197,Nicolas Esteves,55,72.14,3945.68,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,No,No,No,Yes,Two year,No,Bank transfer (automatic)
+CLI-00198,Thiago Barbosa,22,21.2,475.75,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00199,Natália Pereira,15,80.4,1214.95,Female,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00200,Felipe Siqueira,69,120.78,8448.74,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00201,Samuel Barbosa,60,80.66,4861.69,Male,0,Yes,No,Yes,No,DSL,Yes,Yes,No,Yes,Yes,Yes,Two year,Yes,Mailed check
+CLI-00202,Júlia Siqueira,15,77.89,1148.02,Female,0,No,Yes,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00203,Gabriela Santos,11,109.53,1227.8,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00204,Thiago Dias,72,116.48,8142.02,Female,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00205,Mateus Oliveira,10,75.98,768.85,Male,1,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00206,Carla Ferreira,3,69.13,203.59,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00207,Priscila Moreira,49,95.37,4665.02,Female,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,No,Month-to-month,No,Bank transfer (automatic)
+CLI-00208,Renato Santos,72,63.51,4703.08,Male,1,Yes,No,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00209,Felipe Lima,49,102.8,5049.0,Female,0,Yes,No,Yes,No,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,No,Electronic check
+CLI-00210,Lucas Hoffmann,38,39.18,1449.26,Female,1,No,No,No,No phone service,DSL,No,No,Yes,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00211,Diego Pacheco,59,70.77,4157.59,Female,0,No,No,Yes,Yes,DSL,Yes,Yes,Yes,Yes,No,No,One year,Yes,Credit card (automatic)
+CLI-00212,Diego Campos,16,35.63,575.56,Male,0,Yes,No,No,No phone service,DSL,Yes,No,Yes,No,No,No,Month-to-month,No,Mailed check
+CLI-00213,Júlia Pereira,17,69.84,1155.7,Female,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00214,Caio Rocha,16,74.28,1170.84,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Mailed check
+CLI-00215,Tatiane Siqueira,8,25.93,201.45,Male,0,No,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Credit card (automatic)
+CLI-00216,Otávio Cardoso,3,19.52,58.7,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic)
+CLI-00217,Sabrina Esteves,35,98.01,3405.96,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00218,Isabela Nogueira,23,79.14,1820.62,Male,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00219,Natália Ribeiro,13,69.48,892.18,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00220,Leonardo Barbosa,7,49.64,350.75,Female,1,No,No,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00221,João Gomes,72,23.56,1663.05,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
+CLI-00222,Letícia Rocha,63,86.74,5597.95,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Mailed check
+CLI-00223,Igor Vasconcelos,3,48.01,148.01,Female,0,Yes,Yes,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00224,Priscila Almeida,72,24.52,1764.7,Female,0,Yes,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Credit card (automatic)
+CLI-00225,Helena Barbosa,26,19.81,513.99,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
+CLI-00226,Gustavo Pereira,67,87.37,5980.1,Female,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00227,Vanessa Pacheco,62,65.13,3987.14,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,Yes,Yes,No,No,Two year,No,Mailed check
+CLI-00228,Carla Duarte,18,56.35,1032.75,Female,0,No,No,Yes,Yes,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Mailed check
+CLI-00229,Caio Pacheco,41,93.35,3778.51,Male,0,Yes,No,Yes,Yes,Fiber optic,Yes,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00230,Nicolas Farias,19,72.44,1394.53,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00231,Lucas Oliveira,6,49.13,291.84,Female,0,No,No,Yes,Yes,DSL,No,No,No,No,No,No,Month-to-month,Yes,Mailed check
+CLI-00232,Igor Nogueira,19,19.37,370.3,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00233,Ana Esteves,20,89.23,1830.2,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00234,Mariana Teixeira,3,64.35,187.89,Female,0,No,No,Yes,Yes,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00235,Priscila Cardoso,70,107.97,7697.23,Female,1,No,No,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
+CLI-00236,Carla Xavier,52,72.56,3782.59,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00237,João Freitas,5,52.44,260.3,Male,0,No,No,Yes,No,DSL,No,No,No,No,Yes,No,Month-to-month,No,Credit card (automatic)
+CLI-00238,Enzo Duarte,16,67.46,1069.66,Male,0,Yes,Yes,Yes,Yes,DSL,No,Yes,Yes,Yes,No,No,Month-to-month,Yes,Mailed check
+CLI-00239,Tatiane Pereira,68,117.85,7806.76,Male,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,One year,No,Credit card (automatic)
+CLI-00240,Mateus Dias,44,77.93,3379.21,Female,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,No,Yes,One year,No,Credit card (automatic)
+CLI-00241,Isabela Duarte,4,24.28,97.84,Female,0,No,Yes,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
+CLI-00242,Felipe Pacheco,10,77.2,753.36,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00243,Igor Siqueira,43,68.6,2979.78,Female,0,No,No,Yes,No,DSL,Yes,Yes,No,No,Yes,No,Month-to-month,No,Mailed check
+CLI-00244,Karina Teixeira,44,44.11,1994.67,Male,0,No,No,No,No phone service,DSL,No,No,Yes,Yes,No,Yes,One year,No,Electronic check
+CLI-00245,Bruno Xavier,19,57.56,1125.19,Female,0,No,No,Yes,Yes,DSL,No,No,Yes,No,No,No,Month-to-month,Yes,Mailed check
+CLI-00246,Nicolas Ferreira,15,48.99,752.01,Male,0,No,Yes,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00247,Caio Lima,71,95.46,6902.35,Male,0,Yes,No,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00248,Diego Rocha,47,19.23,886.35,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00249,Henrique Macedo,47,43.02,2078.98,Male,0,No,Yes,No,No phone service,DSL,Yes,Yes,No,No,Yes,No,One year,Yes,Bank transfer (automatic)
+CLI-00250,Mariana Moreira,55,46.64,2519.45,Female,0,Yes,Yes,No,No phone service,DSL,Yes,Yes,Yes,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00251,Júlia Ribeiro,21,94.24,2022.86,Male,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,No,Mailed check
+CLI-00252,Vanessa Esteves,0,57.16,0.0,Female,0,No,No,Yes,No,DSL,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00253,João Queiroz,60,84.09,5082.3,Male,0,No,No,Yes,No,DSL,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00254,Karina Esteves,0,90.96,0.0,Female,1,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00255,Isabela Farias,49,99.65,4795.08,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,No,Bank transfer (automatic)
+CLI-00256,Júlia Queiroz,59,101.9,6019.12,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,No,Bank transfer (automatic)
+CLI-00257,Débora Macedo,9,93.81,833.68,Female,0,No,No,Yes,No,Fiber optic,No,No,Yes,No,Yes,Yes,One year,No,Mailed check
+CLI-00258,Caio Esteves,1,74.07,72.41,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00259,Débora Oliveira,15,18.78,275.42,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00260,Tatiane Dias,71,24.21,1749.97,Female,0,Yes,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00261,Otávio Almeida,71,109.94,8003.57,Female,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,Yes,One year,Yes,Bank transfer (automatic)
+CLI-00262,Vinícius Nogueira,34,57.34,1907.67,Male,0,No,No,Yes,No,DSL,No,No,Yes,Yes,No,No,Month-to-month,Yes,Electronic check
+CLI-00263,Mateus Teixeira,10,88.82,862.26,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00264,Henrique Ribeiro,16,76.88,1212.63,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Mailed check
+CLI-00265,Beatriz Duarte,24,55.51,1303.02,Female,0,No,Yes,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,No,Two year,No,Mailed check
+CLI-00266,Priscila Queiroz,2,88.76,174.2,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00267,Thiago Ribeiro,20,32.53,653.85,Male,1,No,No,No,No phone service,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00268,Enzo Oliveira,0,81.48,0.0,Male,0,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00269,Débora Barbosa,69,112.7,7743.28,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00270,Carla Freitas,19,19.33,360.78,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00271,Priscila Gomes,7,57.49,406.4,Female,0,No,No,No,No phone service,DSL,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,No,Mailed check
+CLI-00272,Ana Almeida,36,54.68,1943.62,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,No,No,No,One year,No,Mailed check
+CLI-00273,Karina Rocha,38,97.87,3696.56,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00274,Beatriz Pereira,6,44.85,268.51,Female,1,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check
+CLI-00275,Diego Nogueira,4,88.25,361.57,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00276,Letícia Xavier,2,82.23,161.96,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,No,Electronic check
+CLI-00277,Tatiane Esteves,16,99.82,1618.07,Female,0,No,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,Yes,Credit card (automatic)
+CLI-00278,Gustavo Almeida,67,118.5,7848.69,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00279,Yasmin Teixeira,26,58.18,1548.48,Male,0,Yes,No,Yes,No,DSL,Yes,No,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00280,Nicolas Pacheco,13,99.33,1283.08,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00281,Ana Oliveira,14,19.8,277.29,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00282,João Almeida,16,73.37,1200.49,Female,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00283,Yasmin Almeida,51,68.9,3550.32,Male,0,Yes,Yes,Yes,Yes,DSL,No,No,Yes,Yes,Yes,No,One year,Yes,Electronic check
+CLI-00284,Natália Teixeira,34,104.43,3464.2,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00285,Ana Gomes,4,43.85,171.58,Female,0,No,No,No,No phone service,DSL,Yes,Yes,No,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00286,Henrique Barbosa,41,70.75,2986.16,Female,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,No,Yes,One year,No,Credit card (automatic)
+CLI-00287,Enzo Dias,18,36.83,644.21,Female,0,No,No,No,No phone service,DSL,No,Yes,No,No,No,Yes,Two year,Yes,Mailed check
+CLI-00288,Nicolas Nogueira,39,91.26,3516.62,Male,0,Yes,No,Yes,No,Fiber optic,Yes,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00289,Bruno Macedo,0,51.15,0.0,Male,0,No,No,Yes,No,DSL,No,No,No,Yes,No,No,Month-to-month,Yes,Electronic check
+CLI-00290,Fernanda Santos,21,20.27,413.29,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00291,Igor Ferreira,27,86.59,2290.43,Male,0,No,No,Yes,Yes,DSL,Yes,Yes,Yes,Yes,No,Yes,Month-to-month,No,Bank transfer (automatic)
+CLI-00292,Paulo Nogueira,56,56.1,3087.57,Male,0,No,No,No,No phone service,DSL,No,No,Yes,Yes,Yes,Yes,One year,No,Credit card (automatic)
+CLI-00293,Mariana Lima,69,106.22,7147.3,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,Yes,Credit card (automatic)
+CLI-00294,Fernanda Barbosa,17,20.75,352.16,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check
+CLI-00295,Letícia Santos,37,77.89,2897.91,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Electronic check
+CLI-00296,Olívia Vasconcelos,29,73.7,2114.0,Male,0,No,No,Yes,No,DSL,No,No,Yes,Yes,Yes,Yes,One year,Yes,Bank transfer (automatic)
+CLI-00297,Priscila Farias,49,18.93,905.79,Female,1,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00298,Letícia Macedo,9,34.4,315.38,Male,0,No,No,No,No phone service,DSL,No,No,No,No,Yes,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00299,Nicolas Pereira,49,100.5,5014.46,Female,0,No,No,Yes,No,Fiber optic,No,No,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
+CLI-00300,Sabrina Rocha,4,84.63,339.78,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00301,Lucas Farias,26,78.2,1989.01,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00302,João Monteiro,70,68.16,4783.2,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,No,No,Two year,No,Bank transfer (automatic)
+CLI-00303,Letícia Duarte,11,18.08,200.43,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00304,Leonardo Dias,12,38.21,456.55,Female,0,No,Yes,No,No phone service,DSL,Yes,Yes,No,Yes,No,No,One year,No,Mailed check
+CLI-00305,Vanessa Ferreira,67,85.32,5841.24,Male,0,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,No,Credit card (automatic)
+CLI-00306,Otávio Oliveira,57,86.2,4880.98,Female,0,Yes,Yes,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,One year,No,Bank transfer (automatic)
+CLI-00307,Carla Pereira,52,105.93,5511.96,Female,0,No,No,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,No,Yes,Two year,No,Mailed check
+CLI-00308,Helena Ribeiro,13,72.92,926.01,Female,1,Yes,Yes,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00309,Felipe Campos,53,100.11,5326.06,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,No,Electronic check
+CLI-00310,Igor Barbosa,51,100.98,5232.31,Male,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,No,Yes,No,Yes,Yes,Month-to-month,No,Credit card (automatic)
+CLI-00311,Henrique Xavier,22,44.84,1000.17,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00312,Olívia Rocha,69,97.78,6648.44,Female,1,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,Yes,Electronic check
+CLI-00313,João Moreira,9,94.64,876.9,Male,0,No,Yes,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,No,Electronic check
+CLI-00314,Eduarda Lima,3,19.2,58.36,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Credit card (automatic)
+CLI-00315,Olívia Monteiro,68,102.0,6904.27,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,One year,Yes,Electronic check
+CLI-00316,Ana Hoffmann,7,56.99,396.89,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00317,Enzo Gomes,40,98.06,3988.14,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00318,Tatiane Almeida,21,82.33,1695.29,Male,0,No,No,Yes,Yes,Fiber optic,No,No,Yes,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00319,Renato Siqueira,65,24.52,1607.15,Male,0,Yes,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00320,Gustavo Ferreira,68,24.27,1672.03,Female,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Electronic check
+CLI-00321,Helena Lima,64,20.57,1317.77,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
+CLI-00322,Nicolas Teixeira,15,87.49,1341.74,Female,0,Yes,Yes,Yes,No,Fiber optic,Yes,No,No,Yes,Yes,No,Month-to-month,No,Electronic check
+CLI-00323,Thiago Nogueira,22,21.61,474.53,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
+CLI-00324,Gustavo Cardoso,37,21.79,804.53,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00325,Júlia Nogueira,5,42.12,207.88,Male,1,No,No,No,No phone service,DSL,No,No,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00326,Henrique Gomes,65,93.6,6237.09,Female,0,No,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,One year,No,Bank transfer (automatic)
+CLI-00327,Felipe Duarte,38,20.25,761.02,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Electronic check
+CLI-00328,Beatriz Hoffmann,69,112.15,7829.01,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00329,João Hoffmann,72,107.96,7730.84,Male,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,Yes,Yes,Yes,Two year,Yes,Credit card (automatic)
+CLI-00330,Natália Lima,71,70.03,5102.03,Male,0,Yes,No,Yes,Yes,DSL,No,Yes,Yes,Yes,Yes,No,Two year,No,Bank transfer (automatic)
+CLI-00331,Mariana Nogueira,34,84.33,2944.28,Male,0,Yes,No,Yes,Yes,DSL,No,No,Yes,Yes,Yes,Yes,One year,Yes,Mailed check
+CLI-00332,Otávio Rocha,36,20.5,717.19,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00333,Samuel Freitas,39,51.04,2049.62,Male,1,Yes,No,No,No phone service,DSL,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00334,Fernanda Vasconcelos,8,79.0,635.98,Female,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00335,Leonardo Ferreira,2,42.29,82.42,Female,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Mailed check
+CLI-00336,Helena Ferreira,11,57.76,635.25,Female,0,Yes,Yes,Yes,No,DSL,No,No,Yes,Yes,No,No,Month-to-month,No,Credit card (automatic)
+CLI-00337,Bruno Moreira,28,75.13,2046.78,Female,0,No,No,Yes,Yes,DSL,No,No,No,No,Yes,Yes,One year,Yes,Credit card (automatic)
+CLI-00338,Bruno Campos,0,47.02,0.0,Male,1,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Electronic check
+CLI-00339,Yasmin Dias,5,76.94,377.44,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00340,Priscila Pacheco,11,101.97,1112.78,Female,0,No,No,Yes,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00341,Leonardo Teixeira,10,76.46,755.64,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00342,Karina Macedo,52,51.0,2668.26,Female,1,No,No,No,No phone service,DSL,No,Yes,Yes,Yes,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00343,Nicolas Queiroz,0,84.64,0.0,Female,0,No,Yes,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00344,Júlia Moreira,13,95.62,1275.62,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00345,Mateus Farias,54,82.31,4399.1,Female,0,No,No,Yes,Yes,Fiber optic,Yes,No,Yes,No,No,No,One year,Yes,Credit card (automatic)
+CLI-00346,Renato Monteiro,66,108.24,7173.71,Female,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,One year,Yes,Credit card (automatic)
+CLI-00347,Fernanda Nogueira,60,22.99,1338.51,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00348,Tatiane Duarte,22,82.36,1798.02,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00349,Helena Oliveira,16,78.53,1291.21,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,No,Electronic check
+CLI-00350,Mateus Freitas,8,93.95,734.41,Female,1,No,No,Yes,No,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00351,Felipe Cardoso,22,88.24,1984.36,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00352,Samuel Pereira,1,53.24,53.73,Female,0,No,No,No,No phone service,DSL,No,Yes,No,No,Yes,Yes,Month-to-month,No,Electronic check
+CLI-00353,Bruno Ribeiro,34,92.97,3121.89,Female,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00354,Enzo Pacheco,10,18.77,190.83,Female,0,No,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00355,Samuel Esteves,58,102.39,5863.54,Male,0,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Two year,No,Electronic check
+CLI-00356,Vinícius Vasconcelos,16,56.82,930.66,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,Yes,No,No,Month-to-month,No,Bank transfer (automatic)
+CLI-00357,Nicolas Monteiro,4,72.65,283.32,Male,1,No,No,Yes,No,Fiber optic,No,No,No,Yes,No,No,Month-to-month,No,Electronic check
+CLI-00358,Natália Santos,25,19.36,472.94,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check
+CLI-00359,Karina Farias,24,20.4,496.94,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,Yes,Mailed check
+CLI-00360,Igor Ribeiro,43,78.49,3364.78,Male,0,Yes,Yes,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Mailed check
+CLI-00361,Gustavo Vasconcelos,60,106.95,6281.27,Female,1,No,No,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,No,Yes,Two year,No,Credit card (automatic)
+CLI-00362,Karina Ribeiro,63,62.03,3911.04,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,Yes,No,No,No,Two year,No,Bank transfer (automatic)
+CLI-00363,Sabrina Macedo,21,99.23,2058.45,Male,1,Yes,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00364,João Ribeiro,70,108.51,7618.18,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00365,Tatiane Nogueira,72,80.62,5889.52,Male,0,Yes,No,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
+CLI-00366,Yasmin Pacheco,65,84.72,5624.7,Male,0,Yes,Yes,Yes,No,Fiber optic,Yes,Yes,No,No,No,No,One year,Yes,Credit card (automatic)
+CLI-00367,Eduarda Pereira,6,19.29,112.68,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Bank transfer (automatic)
+CLI-00368,Gustavo Queiroz,35,101.55,3573.95,Female,0,Yes,Yes,Yes,No,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00369,Vanessa Hoffmann,49,90.86,4581.34,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,No,Electronic check
+CLI-00370,Thiago Hoffmann,10,19.75,197.02,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Electronic check
+CLI-00371,Renato Farias,18,82.54,1509.75,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00372,Karina Lima,0,90.8,0.0,Female,1,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00373,Gabriela Teixeira,69,116.34,8207.36,Male,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,One year,Yes,Electronic check
+CLI-00374,Nicolas Siqueira,48,24.14,1164.42,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
+CLI-00375,Débora Campos,56,97.49,5586.62,Male,1,No,Yes,Yes,No,Fiber optic,Yes,No,No,No,Yes,Yes,One year,No,Credit card (automatic)
+CLI-00376,Henrique Rocha,27,80.92,2222.48,Female,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,Yes,Yes,One year,No,Bank transfer (automatic)
+CLI-00377,Débora Pereira,51,89.22,4651.03,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,No,Bank transfer (automatic)
+CLI-00378,Enzo Vasconcelos,53,93.51,4824.39,Male,1,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00379,Eduarda Gomes,46,81.48,3796.55,Female,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,No,Month-to-month,No,Mailed check
+CLI-00380,Letícia Almeida,10,18.79,184.48,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00381,Eduarda Xavier,4,45.42,179.13,Female,1,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
+CLI-00382,Henrique Queiroz,1,57.3,56.7,Male,0,No,No,Yes,No,DSL,No,No,No,No,No,Yes,Month-to-month,No,Mailed check
+CLI-00383,Mateus Duarte,7,94.98,668.5,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,Yes,Yes,Yes,Month-to-month,Yes,Mailed check
+CLI-00384,Otávio Hoffmann,72,105.22,7633.96,Female,0,Yes,Yes,Yes,No,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00385,Mariana Freitas,49,31.16,1566.36,Male,0,Yes,No,No,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00386,Mateus Siqueira,22,70.81,1512.27,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Electronic check
+CLI-00387,Leonardo Duarte,0,23.76,0.0,Female,0,No,No,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
+CLI-00388,Eduarda Esteves,8,80.43,638.11,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00389,Olívia Nogueira,17,54.65,946.78,Male,0,No,No,No,No phone service,DSL,Yes,Yes,Yes,Yes,Yes,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00390,João Pereira,0,73.66,0.0,Male,1,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Electronic check
+CLI-00391,Samuel Nogueira,57,76.71,4375.62,Male,0,No,No,Yes,No,DSL,Yes,No,Yes,Yes,Yes,Yes,One year,No,Mailed check
+CLI-00392,Nicolas Ribeiro,18,20.77,379.7,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Credit card (automatic)
+CLI-00393,Vinícius Cardoso,0,77.14,0.0,Male,0,No,No,Yes,No,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00394,Vinícius Gomes,1,78.61,77.62,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00395,Renato Lima,23,23.93,536.76,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00396,Débora Teixeira,41,69.83,2856.55,Female,0,No,No,Yes,No,DSL,Yes,Yes,No,Yes,No,Yes,One year,Yes,Mailed check
+CLI-00397,Paulo Macedo,15,20.14,308.99,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00398,Igor Macedo,42,20.13,850.44,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
+CLI-00399,Tatiane Monteiro,42,19.33,790.1,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00400,Isabela Pacheco,29,21.51,621.55,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00401,Beatriz Vasconcelos,6,83.42,497.05,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00402,Isabela Rocha,43,18.93,818.02,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Electronic check
+CLI-00403,Gabriela Farias,1,76.91,77.31,Male,0,Yes,Yes,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00404,Diego Gomes,25,82.17,2109.88,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,One year,Yes,Mailed check
+CLI-00405,Sabrina Duarte,41,26.34,1069.45,Male,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
+CLI-00406,Isabela Gomes,35,26.31,915.77,Male,0,No,No,No,No phone service,DSL,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00407,Yasmin Ribeiro,61,19.11,1173.65,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00408,Igor Moreira,53,110.23,5977.63,Male,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check
+CLI-00409,Gabriela Gomes,40,68.53,2775.1,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,No,One year,Yes,Bank transfer (automatic)
+CLI-00410,Gabriela Queiroz,23,18.44,423.38,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00411,Lucas Lima,70,91.41,6519.47,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No,No,One year,Yes,Credit card (automatic)
+CLI-00412,Natália Siqueira,22,67.08,1474.46,Female,1,Yes,No,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00413,Mariana Duarte,40,19.42,798.4,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Credit card (automatic)
+CLI-00414,Otávio Teixeira,7,71.26,492.31,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00415,Beatriz Freitas,68,24.03,1597.51,Male,0,No,No,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
+CLI-00416,Priscila Siqueira,72,19.25,1413.48,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
+CLI-00417,Vinícius Ribeiro,72,119.0,8463.8,Female,0,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,Two year,No,Electronic check
+CLI-00418,Ana Teixeira,41,110.89,4641.26,Female,0,Yes,No,Yes,No,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,One year,Yes,Credit card (automatic)
+CLI-00419,Samuel Moreira,3,106.41,321.33,Female,0,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00420,Otávio Xavier,3,86.82,260.6,Female,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Mailed check
+CLI-00421,Otávio Vasconcelos,67,100.89,6592.14,Female,1,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00422,Enzo Xavier,1,89.49,91.03,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00423,Débora Siqueira,3,57.94,169.29,Male,0,No,No,Yes,Yes,DSL,Yes,Yes,No,No,No,No,Month-to-month,No,Electronic check
+CLI-00424,Gabriela Ribeiro,7,111.18,799.98,Female,1,No,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00425,Paulo Dias,66,87.83,5927.89,Female,0,No,No,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Electronic check
+CLI-00426,Lucas Pereira,27,20.12,536.82,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00427,Gabriela Pacheco,71,96.42,6692.97,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,No,Yes,Two year,Yes,Credit card (automatic)
+CLI-00428,Vinícius Lima,9,75.84,698.35,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00429,Diego Vasconcelos,0,78.52,0.0,Female,0,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00430,Samuel Monteiro,3,47.47,139.2,Female,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,No,Mailed check
+CLI-00431,Felipe Vasconcelos,27,56.69,1530.49,Male,0,Yes,No,Yes,No,DSL,Yes,Yes,No,Yes,No,No,Month-to-month,No,Mailed check
+CLI-00432,Isabela Cardoso,1,96.29,94.83,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00433,Tatiane Farias,21,87.37,1824.62,Male,0,Yes,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Mailed check
+CLI-00434,Henrique Moreira,56,20.47,1155.97,Male,0,No,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
+CLI-00435,Vanessa Lima,41,62.53,2627.62,Female,0,Yes,Yes,Yes,No,DSL,No,Yes,No,Yes,No,Yes,One year,Yes,Bank transfer (automatic)
+CLI-00436,Olívia Pereira,72,19.44,1424.95,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
+CLI-00437,Henrique Vasconcelos,2,38.05,74.55,Male,1,Yes,No,No,No phone service,DSL,No,No,No,No,Yes,No,Month-to-month,Yes,Mailed check
+CLI-00438,Gabriela Hoffmann,20,49.24,983.46,Female,0,No,Yes,Yes,No,DSL,No,No,No,Yes,No,No,One year,Yes,Electronic check
+CLI-00439,Olívia Macedo,16,19.57,312.97,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Mailed check
+CLI-00440,Olívia Barbosa,37,21.37,813.91,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Bank transfer (automatic)
+CLI-00441,Samuel Pacheco,56,101.48,5542.02,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,No,No,Yes,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00442,Thiago Ferreira,16,90.64,1451.18,Female,1,No,No,Yes,No,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00443,Eduarda Rocha,36,52.84,1949.53,Male,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,No,No,No,One year,No,Mailed check
+CLI-00444,Carla Siqueira,8,18.89,150.2,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Mailed check
+CLI-00445,Júlia Campos,68,96.92,6496.34,Female,0,No,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00446,Sabrina Siqueira,7,56.43,396.34,Female,0,Yes,Yes,Yes,No,DSL,Yes,Yes,No,No,No,No,Month-to-month,No,Credit card (automatic)
+CLI-00447,Fernanda Monteiro,0,47.38,0.0,Female,0,No,No,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Credit card (automatic)
+CLI-00448,Júlia Oliveira,15,93.93,1445.05,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00449,Gustavo Lima,66,114.05,7339.78,Female,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,Two year,No,Credit card (automatic)
+CLI-00450,Thiago Almeida,67,77.44,5097.18,Male,1,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,No,Two year,No,Credit card (automatic)
+CLI-00451,Karina Almeida,8,79.84,622.77,Female,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00452,Paulo Hoffmann,69,20.4,1425.5,Male,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00453,Priscila Rocha,40,42.88,1693.91,Male,0,Yes,No,No,No phone service,DSL,Yes,Yes,Yes,No,No,No,One year,Yes,Electronic check
+CLI-00454,Natália Freitas,24,51.81,1273.3,Female,0,No,No,Yes,No,DSL,No,No,Yes,No,No,No,Month-to-month,No,Credit card (automatic)
+CLI-00455,Carla Farias,42,51.36,2208.07,Female,0,Yes,Yes,No,No phone service,DSL,No,Yes,Yes,Yes,No,Yes,One year,No,Bank transfer (automatic)
+CLI-00456,Lucas Cardoso,72,85.62,6326.05,Male,0,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Mailed check
+CLI-00457,Gustavo Barbosa,50,55.94,2756.07,Male,0,No,Yes,Yes,No,DSL,Yes,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00458,Beatriz Campos,53,20.62,1060.12,Female,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Bank transfer (automatic)
+CLI-00459,Sabrina Freitas,24,85.84,2046.27,Female,0,No,No,Yes,Yes,Fiber optic,Yes,No,No,No,Yes,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00460,Bruno Pereira,25,88.25,2267.48,Male,0,Yes,Yes,Yes,No,Fiber optic,No,Yes,Yes,Yes,No,No,One year,No,Mailed check
+CLI-00461,Gustavo Macedo,9,42.51,388.64,Female,0,No,No,No,No phone service,DSL,Yes,Yes,Yes,No,No,No,Month-to-month,No,Bank transfer (automatic)
+CLI-00462,Lucas Moreira,0,19.41,0.0,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00463,Natália Esteves,55,67.22,3742.04,Female,0,Yes,Yes,Yes,Yes,DSL,No,Yes,No,No,Yes,No,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00464,Gabriela Pereira,61,96.4,6027.55,Female,0,Yes,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,No,Month-to-month,No,Electronic check
+CLI-00465,Vinícius Teixeira,9,19.78,183.02,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Credit card (automatic)
+CLI-00466,Helena Farias,55,23.76,1323.74,Male,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Mailed check
+CLI-00467,Renato Dias,33,91.68,3091.33,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,Yes,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00468,Gustavo Gomes,12,95.3,1167.05,Female,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00469,Vanessa Cardoso,9,25.91,231.21,Female,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00470,Priscila Ferreira,27,99.62,2625.03,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00471,Olívia Queiroz,59,37.42,2237.91,Male,0,No,No,No,No phone service,DSL,Yes,Yes,Yes,No,No,No,Two year,No,Bank transfer (automatic)
+CLI-00472,Débora Nogueira,0,20.52,0.0,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,Yes,Electronic check
+CLI-00473,Rafaela Cardoso,7,21.66,150.57,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00474,Tatiane Hoffmann,4,93.19,383.85,Male,0,No,No,Yes,No,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00475,Enzo Queiroz,5,76.23,382.52,Female,0,No,No,Yes,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,Yes,Electronic check
+CLI-00476,Tatiane Pacheco,40,32.02,1282.47,Female,0,Yes,No,No,No phone service,DSL,No,Yes,No,Yes,No,No,One year,No,Mailed check
+CLI-00477,Rafaela Rocha,17,26.12,455.97,Female,0,Yes,Yes,Yes,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,Yes,Bank transfer (automatic)
+CLI-00478,Eduarda Ferreira,12,101.57,1203.05,Male,0,No,No,Yes,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,Yes,Electronic check
+CLI-00479,Enzo Barbosa,36,67.5,2502.82,Male,0,No,Yes,Yes,No,DSL,No,No,No,Yes,Yes,Yes,One year,Yes,Mailed check
+CLI-00480,Vanessa Barbosa,66,20.02,1353.98,Male,0,No,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00481,Mateus Nogueira,18,73.21,1307.02,Female,0,Yes,Yes,Yes,No,DSL,No,Yes,Yes,Yes,Yes,Yes,Month-to-month,No,Bank transfer (automatic)
+CLI-00482,Yasmin Moreira,71,103.51,7273.03,Male,0,Yes,Yes,Yes,Yes,Fiber optic,Yes,Yes,Yes,Yes,No,Yes,Two year,No,Credit card (automatic)
+CLI-00483,Carla Cardoso,5,36.7,179.39,Female,0,Yes,Yes,No,No phone service,DSL,Yes,No,No,Yes,No,No,Month-to-month,No,Mailed check
+CLI-00484,Mateus Santos,5,19.41,99.47,Female,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,No,Mailed check
+CLI-00485,Lucas Ferreira,67,94.44,6208.2,Female,0,Yes,No,Yes,No,Fiber optic,Yes,No,Yes,No,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00486,Gustavo Santos,22,94.78,2023.73,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,Yes,No,Yes,Month-to-month,Yes,Bank transfer (automatic)
+CLI-00487,Lucas Siqueira,65,89.4,5947.0,Male,1,Yes,No,Yes,Yes,Fiber optic,Yes,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00488,Bruno Teixeira,2,83.63,168.24,Male,0,No,No,Yes,No,Fiber optic,No,No,No,No,No,Yes,Month-to-month,Yes,Mailed check
+CLI-00489,Otávio Moreira,66,89.86,5991.91,Male,0,Yes,No,Yes,Yes,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,Yes,Electronic check
+CLI-00490,Isabela Dias,29,70.66,2077.8,Female,1,No,No,Yes,No,Fiber optic,No,Yes,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00491,Eduarda Nogueira,59,63.57,3647.71,Female,0,No,No,Yes,No,DSL,Yes,Yes,Yes,Yes,No,No,Two year,Yes,Credit card (automatic)
+CLI-00492,Bruno Almeida,46,75.31,3379.42,Female,1,Yes,Yes,Yes,No,Fiber optic,No,No,No,No,No,No,Month-to-month,No,Bank transfer (automatic)
+CLI-00493,Gustavo Monteiro,72,93.31,6718.25,Female,1,Yes,Yes,Yes,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,Yes,Bank transfer (automatic)
+CLI-00494,Lucas Campos,44,18.97,812.16,Male,0,Yes,Yes,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,No,Mailed check
+CLI-00495,Renato Esteves,7,72.03,504.34,Male,0,Yes,No,Yes,Yes,DSL,No,Yes,Yes,No,No,Yes,Month-to-month,Yes,Credit card (automatic)
+CLI-00496,Samuel Campos,5,48.09,243.86,Male,0,No,Yes,Yes,No,DSL,Yes,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00497,Henrique Farias,22,46.72,1037.55,Female,0,Yes,Yes,Yes,No,DSL,No,No,No,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00498,Nicolas Hoffmann,21,72.91,1541.83,Male,0,No,No,Yes,No,Fiber optic,No,Yes,Yes,No,No,No,Month-to-month,Yes,Electronic check
+CLI-00499,Mariana Dias,64,20.46,1273.8,Female,0,Yes,No,Yes,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,No,Credit card (automatic)
+CLI-00500,Diego Macedo,63,97.27,6031.18,Male,1,No,No,Yes,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,One year,No,Electronic check

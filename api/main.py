@@ -102,6 +102,7 @@ def prever(cliente: Cliente):
 
 class ClienteAnalisado(BaseModel):
     id: str
+    nome: str | None = None
     probabilidade_churn: float
     risco: Literal["baixo", "médio", "alto"]
     abordar_cliente: bool
@@ -173,9 +174,9 @@ def _em_portugues(df: pd.DataFrame) -> pd.DataFrame:
     pt = df.copy()
     pt["SeniorCitizen"] = pt["SeniorCitizen"].map({0: "não", 1: "sim"})
     for c in pt.columns:
-        if pt[c].dtype == object and c != "customerID":
+        if pt[c].dtype == object and c not in ("customerID", "nome"):
             pt[c] = pt[c].map(lambda v: VALORES.get(v, v))
-    return pt.rename(columns={"customerID": "ID do cliente", **NOMES})
+    return pt.rename(columns={"customerID": "ID do cliente", "nome": "Nome do cliente", **NOMES})
 
 
 def _excel(df: pd.DataFrame, nome: str) -> Response:

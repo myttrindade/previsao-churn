@@ -82,7 +82,7 @@ class Previsor:
     def analisar_base(self, bruto: pd.DataFrame, mapeamento: dict[str, str] | None = None) -> dict:
         if len(bruto) > LIMITE_LINHAS:
             raise ErroDeEntrada(f"A planilha tem {len(bruto):,} linhas; o limite é {LIMITE_LINHAS:,}.")
-        ids, df = padronizar(bruto, mapeamento)
+        ids, nomes, df = padronizar(bruto, mapeamento)
         X = df[self.features]
         for c in CATEGORICAS:  # garantia extra: só valores que o modelo conhece
             invalidos = set(X[c].astype(str)) - self.valores_aceitos[c]
@@ -106,6 +106,7 @@ class Previsor:
             protege = c.idxmin()
             clientes.append({
                 "id": ids.iloc[i],
+                "nome": nomes.iloc[i] or None,
                 "probabilidade_churn": round(float(prob[i]), 4),
                 "risco": str(nivel[i]),
                 "abordar_cliente": bool(abordar[i]),

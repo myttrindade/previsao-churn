@@ -15,5 +15,7 @@ COPY --chown=app api/ api/
 COPY --chown=app models/ models/
 
 USER app
-EXPOSE 7860
-CMD ["uvicorn", "api.main:app", "--host", "0.0.0.0", "--port", "7860"]
+# A plataforma de hospedagem informa a porta pela variável PORT
+ENV PORT=8000
+EXPOSE 8000
+CMD ["sh", "-c", "uvicorn api.main:app --host 0.0.0.0 --port $PORT"]

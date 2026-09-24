@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: previsao-churn
+    runtime: docker
+    plan: free
+    region: ohio
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /saude

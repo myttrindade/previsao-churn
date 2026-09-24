@@ -52,8 +52,8 @@ Os três modelos empatam em ROC-AUC (0,845), e o LightGBM fica levemente à fren
 | Explicação por cliente | Valores SHAP nativos do LightGBM, agrupados por variável original |
 | App web | HTML + JavaScript servido pela própria API |
 | Empacotamento | Docker |
-| Hospedagem | Hugging Face Spaces |
-| CI/CD | GitHub Actions: testes a cada push e deploy automático quando passam |
+| Hospedagem | Render, com deploy automático a cada push na branch main |
+| CI | GitHub Actions: testes automatizados a cada push |
 
 Exemplo de chamada:
 

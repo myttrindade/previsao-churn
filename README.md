@@ -2,7 +2,9 @@
 
 Modelo de machine learning que estima a chance de cada cliente cancelar o serviço, decide **quem vale abordar** com uma oferta de retenção e **explica o porquê** de cada previsão. O modelo está em produção como API e app web.
 
-<!-- APP_LINK -->
+**[🌐 Testar o app](https://previsao-churn.onrender.com)** · **[📖 Documentação da API](https://previsao-churn.onrender.com/docs)**
+
+> Hospedado no plano gratuito do Render: se o app estiver parado, o primeiro acesso leva cerca de 1 minuto para carregar.
 
 ![App de previsão de churn](reports/figuras/app.png)
 
@@ -58,7 +60,7 @@ Os três modelos empatam em ROC-AUC (0,845), e o LightGBM fica levemente à fren
 Exemplo de chamada:
 
 ```bash
-curl -X POST <URL_DA_API>/prever -H "Content-Type: application/json" -d '{
+curl -X POST https://previsao-churn.onrender.com/prever -H "Content-Type: application/json" -d '{
   "gender": "Female", "SeniorCitizen": 0, "Partner": "No", "Dependents": "No", "tenure": 3,
   "PhoneService": "Yes", "MultipleLines": "No", "InternetService": "Fiber optic",
   "OnlineSecurity": "No", "OnlineBackup": "No", "DeviceProtection": "No", "TechSupport": "No",

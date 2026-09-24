@@ -9,14 +9,15 @@
 <style>
 :root,:root[data-theme="dark"]{
   color-scheme:dark;
-  --page:#070b16; --surface:#0f1729; --surface-2:#152038; --ink:#f1f5fb; --ink-2:#c3cbdc; --muted:#8b97b0;
-  --line:#1f2a44; --border:rgba(255,255,255,.08); --shadow:0 1px 2px rgba(0,0,0,.45),0 10px 30px rgba(0,0,0,.35);
-  --azul:#5b9cf5; --roxo:#3b7be8; --rosa:#8cb8ff;
-  --azul-bg:rgba(91,156,245,.14); --roxo-bg:rgba(59,123,232,.16); --rosa-bg:rgba(140,184,255,.13);
-  --grad:linear-gradient(120deg,#1e3a8a 0%,#2563eb 100%);
-  --hero:radial-gradient(1100px 420px at 85% -30%,rgba(37,99,235,.40),transparent 60%),radial-gradient(900px 380px at 0% 0%,rgba(30,58,138,.60),transparent 60%),linear-gradient(180deg,#0b1a3a,#070b16);
+  --page:#050507; --surface:#0e0e12; --surface-2:#15151b; --ink:#f4f4f6; --ink-2:#b9bcc6; --muted:#8a8d99;
+  --line:#22232b; --border:rgba(255,255,255,.07); --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 30px rgba(0,0,0,.35);
+  --azul:#5b8def; --roxo:#4f7fe6; --rosa:#8db4f7;
+  --azul-bg:rgba(91,141,239,.13); --roxo-bg:rgba(79,127,230,.14); --rosa-bg:rgba(141,180,247,.12);
+  --grad:linear-gradient(120deg,#2563eb 0%,#3b82f6 100%);
+  --titulo:linear-gradient(90deg,#5b8def 0%,#9b6dff 50%,#e0409a 100%);
+  --hero:radial-gradient(760px 460px at 0% 0%,rgba(76,50,140,.38),transparent 65%),#000;
   --alto:#f04d57; --alto-bg:rgba(240,77,87,.14); --medio:#f5b53d; --medio-bg:rgba(245,181,61,.14); --baixo:#2fcf7a; --baixo-bg:rgba(47,207,122,.13);
-  --track:#1f2a44;
+  --track:#23242d;
 }
 *{box-sizing:border-box;margin:0}
 [hidden]{display:none!important}
@@ -28,20 +29,32 @@ a{color:inherit}
 button{font:inherit;cursor:pointer}
 
 /* ---------- cabeçalho ---------- */
-.hero{background:var(--hero);color:#fff;padding:22px 0 78px;margin-bottom:-54px;border-bottom:1px solid rgba(255,255,255,.06)}
+.hero{background:var(--hero);color:#fff;padding:22px 0 56px;margin-bottom:26px;border-bottom:1px solid rgba(255,255,255,.06)}
 .hero .wrap{padding-bottom:0}
 .hero-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.logo{width:42px;height:42px;border-radius:12px;background:var(--grad);display:grid;place-items:center;box-shadow:0 6px 20px rgba(37,99,235,.45)}
-.logo svg{width:24px;height:24px}
-.marca b{display:block;font-size:1.25rem;letter-spacing:-.02em;line-height:1.1}
-.marca small{font-size:.8rem;opacity:.8}
-.tema{display:inline-flex;border:1px solid rgba(255,255,255,.2);border-radius:999px;padding:3px;background:rgba(255,255,255,.06)}
-.tema button{border:0;background:none;color:rgba(255,255,255,.85);font-size:.82rem;padding:5px 12px;border-radius:999px}
-.tema button[aria-pressed="true"]{background:#fff;color:#0b1a3a}
-.hero h1{font-size:clamp(1.6rem,3.6vw,2.3rem);letter-spacing:-.03em;line-height:1.15;margin:30px 0 8px;max-width:24ch}
-.hero h1 em{font-style:normal;background:linear-gradient(90deg,#bfdbfe,#60a5fa);-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{max-width:64ch;opacity:.85}
+.logo{width:40px;height:40px;border-radius:11px;background:#15151b;border:1px solid rgba(255,255,255,.12);display:grid;place-items:center}
+.logo svg{width:22px;height:22px}
+.marca b{display:block;font-size:1.15rem;letter-spacing:-.02em;line-height:1.1}
+.marca small{font-size:.78rem;color:#a1a1aa}
+.capa{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center;margin-top:44px}
+.rotulo{display:inline-flex;align-items:center;gap:8px;color:var(--azul);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.rotulo svg{width:16px;height:16px}
+.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;letter-spacing:-.035em;line-height:1.05;margin:14px 0 20px}
+.hero h1 em{font-style:normal;background:var(--titulo);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{max-width:58ch;color:#a1a1aa;font-size:1.02rem;line-height:1.65}
+.hero p a{color:#d4d4d8}
+.vitrine{position:relative;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:18px;overflow:hidden;
+  background-color:#0b0b0e;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:44px 44px}
+.vitrine .etiqueta{display:inline-block;border:1px solid rgba(255,255,255,.1);background:#111116;border-radius:10px;padding:8px 12px;margin-bottom:16px}
+.vitrine .etiqueta small{display:block;font:500 .68rem/1.4 ui-monospace,Consolas,monospace;letter-spacing:.14em;color:#8a8d99}
+.vitrine .etiqueta b{font:700 .88rem/1.4 ui-monospace,Consolas,monospace;color:#f4f4f6}
+.vitrine .linha{display:flex;align-items:center;gap:12px;background:rgba(17,17,22,.92);border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:12px 14px;margin-top:10px}
+.vitrine .linha .nome{flex:1;min-width:0}
+.vitrine .linha .nome b{display:block;font-size:.92rem}
+.vitrine .linha .nome span{font-size:.76rem;color:#8a8d99}
+.vitrine .linha .pct{font-weight:800;font-size:1.1rem;font-variant-numeric:tabular-nums}
+@media (max-width:860px){.capa{grid-template-columns:1fr;gap:28px}}
 
 /* ---------- abas ---------- */
 .tabs{display:inline-flex;gap:4px;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:5px;margin:0 0 18px;box-shadow:var(--shadow);position:relative}
@@ -54,7 +67,7 @@ button{font:inherit;cursor:pointer}
 .acoes{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 .btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:var(--surface-2);color:var(--ink);border-radius:10px;padding:10px 16px;font-weight:600;font-size:.9rem;transition:transform .12s,box-shadow .12s}
 .btn:hover{transform:translateY(-1px)}
-.btn.pri{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(37,99,235,.35)}
+.btn.pri{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 6px 18px rgba(37,99,235,.28)}
 .btn:disabled{opacity:.55;cursor:wait;transform:none}
 .links{display:flex;flex-wrap:wrap;gap:18px;font-size:.85rem;margin-top:12px}
 .links a{color:var(--ink-2)}
@@ -74,7 +87,7 @@ select:focus,input:focus{outline:2px solid var(--roxo);outline-offset:1px}
 .chip[aria-pressed="true"]{background:var(--grad);color:#fff;border-color:transparent}
 .presets{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
 .presets span{color:var(--muted);font-size:.85rem;align-self:center}
-.go{width:100%;border:0;border-radius:12px;padding:12px;background:var(--grad);color:#fff;font-weight:700;margin-top:4px;box-shadow:0 6px 18px rgba(37,99,235,.35)}
+.go{width:100%;border:0;border-radius:12px;padding:12px;background:var(--grad);color:#fff;font-weight:700;margin-top:4px;box-shadow:0 6px 18px rgba(37,99,235,.28)}
 
 /* ---------- indicadores ---------- */
 .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:18px 0}
@@ -149,8 +162,19 @@ footer p{max-width:85ch}
         <span><b>Retém</b><small>Previsão de churn e retenção de clientes</small></span>
       </a>
     </div>
-    <h1>Descubra quem vai cancelar <em>antes que aconteça</em></h1>
-    <p>Veja quais clientes estão em risco, em quem vale investir uma oferta de retenção e o que mais pesa no risco de cada um. <a href="/docs">Documentação da API</a></p>
+    <div class="capa">
+      <div>
+        <span class="rotulo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>Retenção de clientes</span>
+        <h1>Saiba quem vai<br>cancelar<br><em>antes que aconteça.</em></h1>
+        <p>O modelo analisa a sua base, aponta os clientes com maior risco de cancelamento e mostra o motivo de cada um, para a equipe agir primeiro onde vale mais a pena. <a href="/docs">Documentação da API</a></p>
+      </div>
+      <div class="vitrine" aria-hidden="true">
+        <span class="etiqueta"><small>PRIORIDADE DE CONTATO</small><b>3 clientes para hoje</b></span>
+        <div class="linha"><span class="tag alto"><span class="dot"></span>alto</span><span class="nome"><b>Cliente A</b><span>contrato mensal · 1 mês de casa</span></span><span class="pct" style="color:var(--alto)">93%</span></div>
+        <div class="linha"><span class="tag medio"><span class="dot"></span>médio</span><span class="nome"><b>Cliente B</b><span>sem suporte técnico · fibra óptica</span></span><span class="pct" style="color:var(--medio)">47%</span></div>
+        <div class="linha"><span class="tag baixo"><span class="dot"></span>baixo</span><span class="nome"><b>Cliente C</b><span>contrato de 2 anos · 5 anos de casa</span></span><span class="pct" style="color:var(--baixo)">4%</span></div>
+      </div>
+    </div>
   </div>
 </header>
 

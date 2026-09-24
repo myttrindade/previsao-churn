@@ -67,7 +67,8 @@ def limpar(df: pd.DataFrame) -> pd.DataFrame:
     df = df.copy()
     # TotalCharges vem como texto e fica em branco para clientes no primeiro mês (tenure = 0).
     df["TotalCharges"] = pd.to_numeric(df["TotalCharges"], errors="coerce").fillna(0.0)
-    df["SeniorCitizen"] = df["SeniorCitizen"].map({0: "No", 1: "Yes"})
+    # Aceita 0/1 (formato original) ou Yes/No.
+    df["SeniorCitizen"] = df["SeniorCitizen"].replace({0: "No", 1: "Yes", "0": "No", "1": "Yes"})
     if ALVO in df:
         df[ALVO] = (df[ALVO] == "Yes").astype(int)
     return df.drop(columns=["customerID"], errors="ignore")

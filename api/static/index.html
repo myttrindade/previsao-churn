@@ -28,7 +28,39 @@
 }
 *{box-sizing:border-box;margin:0}
 body{background:var(--page);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
-.wrap{max-width:1100px;margin:0 auto;padding:32px 16px 48px}
+.wrap{max-width:1180px;margin:0 auto;padding:32px 16px 48px}
+.tabs{display:flex;gap:4px;border-bottom:1px solid var(--line);margin:0 0 20px}
+.tabs button{border:0;background:none;color:var(--ink-2);padding:10px 14px;font-weight:600;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--accent)}
+.acoes{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.btn{border:1px solid var(--border);background:var(--surface);color:var(--ink);border-radius:10px;padding:9px 14px;font-weight:600;font-size:.9rem}
+.btn.pri{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.btn:disabled{opacity:.5;cursor:wait}
+.links{display:flex;flex-wrap:wrap;gap:16px;font-size:.85rem;margin-top:10px}
+.links a{color:var(--ink-2)}
+.erro{border:1px solid var(--crit);color:var(--ink);border-radius:10px;padding:10px 12px;margin-top:12px;font-size:.9rem}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:16px 0}
+.kpi .v{font-size:1.6rem;font-weight:700;letter-spacing:-.02em}
+.kpi .d{color:var(--muted);font-size:.78rem}
+.barra-ferr{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:10px}
+.filtros{display:inline-flex;flex-wrap:wrap;gap:6px}
+.filtros button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+.busca{width:220px}
+.tbl{overflow-x:auto;border:1px solid var(--border);border-radius:12px;background:var(--surface)}
+table{width:100%;border-collapse:collapse;font-size:.86rem}
+th,td{padding:9px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--ink-2);font-size:.78rem;font-weight:600;background:var(--surface)}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tr:last-child td{border-bottom:0}
+.mini{display:flex;align-items:center;gap:8px;min-width:130px}
+.mini .trk{flex:1;height:6px;border-radius:999px;background:var(--track);position:relative}
+.mini .trk i{position:absolute;inset:0 auto 0 0;border-radius:999px;background:var(--accent)}
+.mini b{font-variant-numeric:tabular-nums;min-width:48px;text-align:right}
+.tag{display:inline-flex;gap:6px;align-items:center;white-space:nowrap}
+.tag .dot{width:9px;height:9px;border-radius:50%}
+.motivo{color:var(--ink-2)}
+.mais{margin:12px auto 0;display:block}
+.cont{color:var(--muted);font-size:.8rem}
 h1{font-size:clamp(1.5rem,3.5vw,2rem);letter-spacing:-.02em}
 .sub{color:var(--ink-2);margin:4px 0 20px;max-width:65ch}
 .sub a{color:var(--ink-2)}
@@ -68,8 +100,53 @@ footer a{color:var(--ink-2)}
 <body>
 <div class="wrap">
   <h1>Previsão de Churn</h1>
-  <p class="sub">Preencha o perfil de um cliente para estimar a chance de ele cancelar o serviço, saber se vale oferecer uma ação de retenção e entender o que mais pesou na previsão. <a href="/docs">Documentação da API</a></p>
+  <p class="sub">Descubra quais clientes estão prestes a cancelar, em quem vale investir uma oferta de retenção e o que mais pesa no risco de cada um. <a href="/docs">Documentação da API</a></p>
 
+  <nav class="tabs" role="tablist">
+    <button role="tab" id="tab-base" aria-controls="aba-base" aria-selected="true">Analisar minha base</button>
+    <button role="tab" id="tab-cliente" aria-controls="aba-cliente" aria-selected="false">Simular um cliente</button>
+  </nav>
+
+  <section id="aba-base" role="tabpanel" aria-labelledby="tab-base">
+    <div class="card">
+      <p class="rec" style="margin-bottom:12px">Envie a planilha com seus clientes (um por linha, com um ID) e receba a lista ordenada do maior para o menor risco de cancelamento.</p>
+      <div class="acoes">
+        <button class="btn pri" id="usar-exemplo">Usar base de exemplo (500 clientes)</button>
+        <label class="btn" style="display:inline-flex;cursor:pointer">Enviar planilha CSV<input type="file" id="arquivo" accept=".csv,text/csv" hidden></label>
+        <span class="cont" id="status"></span>
+      </div>
+      <div class="links"><a href="/modelo-planilha.csv">Baixar modelo de planilha</a><a href="/base-exemplo.csv">Baixar a base de exemplo</a></div>
+      <div class="erro" id="erro" hidden></div>
+    </div>
+
+    <div id="resultado" hidden>
+      <div class="kpis" id="kpis"></div>
+      <div class="barra-ferr">
+        <div class="filtros" role="group" aria-label="Filtrar clientes">
+          <button class="chip" data-filtro="todos" aria-pressed="true">Todos</button>
+          <button class="chip" data-filtro="abordar" aria-pressed="false">Abordar</button>
+          <button class="chip" data-filtro="alto" aria-pressed="false">Risco alto</button>
+          <button class="chip" data-filtro="médio" aria-pressed="false">Risco médio</button>
+          <button class="chip" data-filtro="baixo" aria-pressed="false">Risco baixo</button>
+        </div>
+        <div class="acoes">
+          <input class="busca" id="busca" type="search" placeholder="Buscar pelo ID do cliente" aria-label="Buscar pelo ID do cliente">
+          <button class="btn" id="baixar">Baixar lista (CSV)</button>
+        </div>
+      </div>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>#</th><th>Cliente</th><th>Chance de cancelar</th><th>Risco</th><th>Abordar?</th><th>Principal motivo</th><th>Contrato</th><th class="n">Meses</th><th class="n">Mensalidade</th></tr></thead>
+          <tbody id="linhas"></tbody>
+        </table>
+      </div>
+      <p class="cont" id="contagem" style="margin-top:8px"></p>
+      <button class="btn mais" id="mais" hidden>Mostrar mais</button>
+    </div>
+  </section>
+
+  <section id="aba-cliente" role="tabpanel" aria-labelledby="tab-cliente" hidden>
+  <p class="rec" style="margin-bottom:12px">Simule o perfil de um cliente para ver a chance de cancelar, a recomendação e o que mais pesou.</p>
   <div class="grid">
     <form class="card" id="form">
       <div class="presets"><span>Exemplos:</span>
@@ -123,8 +200,9 @@ footer a{color:var(--ink-2)}
       <ul id="fatores"><li class="vazio">–</li></ul>
     </section>
   </div>
+  </section>
 
-  <footer>Modelo LightGBM treinado na base pública Telco Customer Churn (IBM). O ponto de corte foi escolhido para maximizar o resultado de uma campanha de retenção. · <a href="/saude">Métricas do modelo</a></footer>
+  <footer>Modelo LightGBM treinado na base pública Telco Customer Churn (IBM). O ponto de corte (29%) foi escolhido para maximizar o resultado de uma campanha de retenção: oferta de 1 mês grátis, 30% de sucesso e 12 meses de receita preservada. A base de exemplo tem clientes fictícios. · <a href="/saude">Métricas do modelo</a></footer>
 </div>
 
 <script>
@@ -179,6 +257,118 @@ async function calcular(e) {
 }
 form.addEventListener('submit', calcular);
 preencher(PRESETS.risco);
+
+// ---------- abas ----------
+const abas = {base: ['tab-base', 'aba-base'], cliente: ['tab-cliente', 'aba-cliente']};
+function mostrarAba(nome) {
+  for (const [k, [tab, painel]] of Object.entries(abas)) {
+    document.getElementById(tab).setAttribute('aria-selected', k === nome);
+    document.getElementById(painel).hidden = k !== nome;
+  }
+  history.replaceState(null, '', nome === 'cliente' ? '#simular' : '#base');
+}
+document.getElementById('tab-base').addEventListener('click', () => mostrarAba('base'));
+document.getElementById('tab-cliente').addEventListener('click', () => mostrarAba('cliente'));
+if (location.hash === '#simular') mostrarAba('cliente');
+
+// ---------- análise da base ----------
+const usd = v => 'US$ ' + v.toLocaleString('pt-BR', {maximumFractionDigits: 0});
+const usd2 = v => 'US$ ' + v.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+const num = v => v.toLocaleString('pt-BR');
+const esc = t => String(t).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
+let analise = null, filtro = 'todos', limite = 50;
+
+async function analisar(requisicao) {
+  const botao = document.getElementById('usar-exemplo');
+  const erro = document.getElementById('erro');
+  const status = document.getElementById('status');
+  erro.hidden = true; botao.disabled = true;
+  status.textContent = 'Analisando...';
+  try {
+    const r = await requisicao();
+    const corpo = await r.json();
+    if (!r.ok) throw new Error(typeof corpo.detail === 'string' ? corpo.detail : 'Não foi possível analisar a planilha.');
+    analise = corpo; filtro = 'todos'; limite = 50;
+    document.querySelectorAll('[data-filtro]').forEach(b => b.setAttribute('aria-pressed', b.dataset.filtro === 'todos'));
+    document.getElementById('busca').value = '';
+    desenharResumo(); desenharTabela();
+    document.getElementById('resultado').hidden = false;
+  } catch (e) {
+    erro.textContent = e.message || 'Erro ao analisar.'; erro.hidden = false;
+  } finally {
+    status.textContent = ''; botao.disabled = false;
+  }
+}
+document.getElementById('usar-exemplo').addEventListener('click', () => analisar(() => fetch('/analisar-base/exemplo')));
+document.getElementById('arquivo').addEventListener('change', e => {
+  const f = e.target.files[0]; if (!f) return;
+  const dados = new FormData(); dados.append('arquivo', f);
+  analisar(() => fetch('/analisar-base', {method: 'POST', body: dados}));
+  e.target.value = '';
+});
+
+function desenharResumo() {
+  const r = analise.resumo;
+  const tiles = [
+    ['Clientes analisados', num(r.clientes), ''],
+    ['Abordar agora', num(r.abordar), `${Math.round(r.abordar / r.clientes * 100)}% da base`],
+    ['Por nível de risco', `${num(r.risco_alto)} · ${num(r.risco_medio)} · ${num(r.risco_baixo)}`, 'alto · médio · baixo'],
+    ['Receita mensal dos clientes a abordar', usd(r.receita_mensal_abordados), 'mensalidades somadas'],
+    ['Ganho esperado da campanha', usd(r.ganho_esperado_campanha), 'em 12 meses, já descontado o custo das ofertas'],
+  ];
+  document.getElementById('kpis').innerHTML = tiles.map(([l, v, d]) =>
+    `<div class="card kpi"><div class="lbl">${l}</div><div class="v">${v}</div><div class="d">${d}</div></div>`).join('');
+}
+
+function visiveis() {
+  const termo = document.getElementById('busca').value.trim().toLowerCase();
+  return analise.clientes.filter(c =>
+    (filtro === 'todos' || (filtro === 'abordar' ? c.abordar_cliente : c.risco === filtro)) &&
+    (!termo || c.id.toLowerCase().includes(termo)));
+}
+
+function motivo(c) {
+  if (c.motivos_risco.length) return c.motivos_risco.join(' · ');
+  return `Protegido por: ${c.fator_protecao}`;
+}
+
+function desenharTabela() {
+  const lista = visiveis();
+  document.getElementById('linhas').innerHTML = lista.slice(0, limite).map((c, i) => {
+    const r = RISCO[c.risco];
+    return `<tr>
+      <td class="cont">${i + 1}</td>
+      <td><strong>${esc(c.id)}</strong></td>
+      <td><div class="mini"><span class="trk"><i style="width:${(c.probabilidade_churn * 100).toFixed(1)}%"></i></span><b>${pct(c.probabilidade_churn)}</b></div></td>
+      <td><span class="tag"><span class="dot" style="background:${r.cor}"></span>${r.texto.replace('Risco ', '')}</span></td>
+      <td>${c.abordar_cliente ? '✔ sim' : 'não'}</td>
+      <td class="motivo">${esc(motivo(c))}</td>
+      <td>${esc(c.contrato)}</td>
+      <td class="n">${c.meses_como_cliente}</td>
+      <td class="n">${usd2(c.mensalidade)}</td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="9" class="vazio">Nenhum cliente encontrado.</td></tr>';
+  document.getElementById('contagem').textContent =
+    `Mostrando ${num(Math.min(limite, lista.length))} de ${num(lista.length)} clientes, do maior para o menor risco.`;
+  document.getElementById('mais').hidden = lista.length <= limite;
+}
+document.querySelectorAll('[data-filtro]').forEach(b => b.addEventListener('click', () => {
+  filtro = b.dataset.filtro; limite = 50;
+  document.querySelectorAll('[data-filtro]').forEach(x => x.setAttribute('aria-pressed', x === b));
+  desenharTabela();
+}));
+document.getElementById('busca').addEventListener('input', () => { limite = 50; desenharTabela(); });
+document.getElementById('mais').addEventListener('click', () => { limite += 100; desenharTabela(); });
+
+document.getElementById('baixar').addEventListener('click', () => {
+  const cab = ['cliente', 'chance_de_cancelar', 'risco', 'abordar', 'principal_motivo', 'contrato', 'meses_como_cliente', 'mensalidade'];
+  const linhas = visiveis().map(c => [c.id, (c.probabilidade_churn * 100).toFixed(1).replace('.', ',') + '%', c.risco,
+    c.abordar_cliente ? 'sim' : 'não', motivo(c), c.contrato, c.meses_como_cliente, String(c.mensalidade).replace('.', ',')]);
+  const csv = [cab, ...linhas].map(l => l.map(v => `"${String(v).replace(/"/g, '""')}"`).join(';')).join('\r\n');
+  const url = URL.createObjectURL(new Blob(['﻿' + csv], {type: 'text/csv;charset=utf-8'}));
+  const a = Object.assign(document.createElement('a'), {href: url, download: 'clientes_por_risco.csv'});
+  a.click(); URL.revokeObjectURL(url);
+});
 </script>
 </body>
 </html>

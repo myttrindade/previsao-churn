@@ -6,16 +6,18 @@ Uso local:
 
 from __future__ import annotations
 
+import io
 import sys
 from pathlib import Path
 from typing import Literal
 
-from fastapi import FastAPI
-from fastapi.responses import FileResponse
+import pandas as pd
+from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel, Field
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from churn.previsao import Previsor  # noqa: E402
+from churn.previsao import ErroDeEntrada, Previsor  # noqa: E402
 
 SimNao = Literal["Yes", "No"]
 SemInternet = Literal["Yes", "No", "No internet service"]
@@ -75,6 +77,8 @@ app = FastAPI(
     version="1.0.0",
 )
 PAGINA = Path(__file__).resolve().parent / "static" / "index.html"
+BASE_EXEMPLO = Path(__file__).resolve().parent / "exemplos" / "base_exemplo_clientes.csv"
+TAMANHO_MAXIMO = 10 * 1024 * 1024  # 10 MB
 
 
 @app.get("/", include_in_schema=False)
@@ -91,3 +95,74 @@ def saude():
 @app.post("/prever", response_model=Resposta)
 def prever(cliente: Cliente):
     return previsor.prever(cliente.model_dump())
+
+
+class ClienteAnalisado(BaseModel):
+    id: str
+    probabilidade_churn: float
+    risco: Literal["baixo", "médio", "alto"]
+    abordar_cliente: bool
+    mensalidade: float
+    meses_como_cliente: int
+    contrato: str
+    motivos_risco: list[str]
+    fator_protecao: str
+
+
+class Resumo(BaseModel):
+    clientes: int
+    abordar: int
+    risco_alto: int
+    risco_medio: int
+    risco_baixo: int
+    receita_mensal_abordados: float
+    receita_mensal_em_risco: float
+    ganho_esperado_campanha: float
+    ponto_de_corte: float
+
+
+class AnaliseBase(BaseModel):
+    resumo: Resumo
+    clientes: list[ClienteAnalisado]
+
+
+def _analisar(df: pd.DataFrame) -> dict:
+    try:
+        return previsor.analisar_base(df)
+    except ErroDeEntrada as erro:
+        raise HTTPException(status_code=422, detail=str(erro))
+
+
+@app.post("/analisar-base", response_model=AnaliseBase)
+async def analisar_base(arquivo: UploadFile = File(description="Planilha CSV com um cliente por linha")):
+    """Analisa uma base inteira: devolve os clientes ordenados do maior para o menor risco."""
+    conteudo = await arquivo.read()
+    if len(conteudo) > TAMANHO_MAXIMO:
+        raise HTTPException(status_code=413, detail="Arquivo maior que 10 MB.")
+    try:
+        texto = conteudo.decode("utf-8-sig")
+    except UnicodeDecodeError:
+        texto = conteudo.decode("latin-1")
+    try:
+        df = pd.read_csv(io.StringIO(texto), sep=None, engine="python")  # aceita vírgula ou ponto e vírgula
+    except Exception:
+        raise HTTPException(status_code=422, detail="Não foi possível ler o arquivo. Envie um CSV.")
+    return _analisar(df)
+
+
+@app.get("/analisar-base/exemplo", response_model=AnaliseBase)
+def analisar_base_exemplo():
+    """Analisa a base de exemplo com 500 clientes fictícios."""
+    return _analisar(pd.read_csv(BASE_EXEMPLO))
+
+
+@app.get("/base-exemplo.csv", include_in_schema=False)
+def baixar_base_exemplo():
+    return FileResponse(BASE_EXEMPLO, media_type="text/csv", filename="base_exemplo_clientes.csv")
+
+
+@app.get("/modelo-planilha.csv", include_in_schema=False)
+def baixar_modelo_planilha():
+    modelo = pd.read_csv(BASE_EXEMPLO, nrows=3)
+    return Response(modelo.to_csv(index=False), media_type="text/csv",
+                    headers={"Content-Disposition": "attachment; filename=modelo_planilha_clientes.csv"})

@@ -7,17 +7,20 @@ Uso local:
 from __future__ import annotations
 
 import io
+import json
 import sys
 from pathlib import Path
 from typing import Literal
 
 import pandas as pd
-from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.responses import FileResponse, Response
 from pydantic import BaseModel, Field
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from churn.previsao import ErroDeEntrada, Previsor  # noqa: E402
+from churn.dados import NOMES, VALORES  # noqa: E402
+from churn.entrada import ErroDeEntrada, MapeamentoNecessario, ler_arquivo  # noqa: E402
+from churn.previsao import Previsor  # noqa: E402
 
 SimNao = Literal["Yes", "No"]
 SemInternet = Literal["Yes", "No", "No internet service"]
@@ -107,6 +110,7 @@ class ClienteAnalisado(BaseModel):
     contrato: str
     motivos_risco: list[str]
     fator_protecao: str
+    dados: dict[str, str | int | float]
 
 
 class Resumo(BaseModel):
@@ -126,28 +130,36 @@ class AnaliseBase(BaseModel):
     clientes: list[ClienteAnalisado]
 
 
-def _analisar(df: pd.DataFrame) -> dict:
+def _analisar(df: pd.DataFrame, mapeamento: dict[str, str] | None = None) -> dict:
     try:
-        return previsor.analisar_base(df)
+        return previsor.analisar_base(df, mapeamento)
+    except MapeamentoNecessario as pendente:
+        raise HTTPException(status_code=422, detail=pendente.detalhe())
     except ErroDeEntrada as erro:
         raise HTTPException(status_code=422, detail=str(erro))
 
 
 @app.post("/analisar-base", response_model=AnaliseBase)
-async def analisar_base(arquivo: UploadFile = File(description="Planilha CSV com um cliente por linha")):
-    """Analisa uma base inteira: devolve os clientes ordenados do maior para o menor risco."""
+async def analisar_base(
+    arquivo: UploadFile = File(description="Planilha Excel (.xlsx) ou CSV com um cliente por linha"),
+    mapeamento: str | None = Form(None, description='JSON opcional {"campo do modelo": "coluna da planilha"}'),
+):
+    """Analisa uma base inteira: devolve os clientes ordenados do maior para o menor risco.
+
+    Reconhece colunas e valores em português ou inglês. Se alguma coluna obrigatória não for
+    reconhecida, responde 422 com `tipo: mapeamento` e a lista de campos para o usuário indicar.
+    """
     conteudo = await arquivo.read()
     if len(conteudo) > TAMANHO_MAXIMO:
         raise HTTPException(status_code=413, detail="Arquivo maior que 10 MB.")
     try:
-        texto = conteudo.decode("utf-8-sig")
-    except UnicodeDecodeError:
-        texto = conteudo.decode("latin-1")
-    try:
-        df = pd.read_csv(io.StringIO(texto), sep=None, engine="python")  # aceita vírgula ou ponto e vírgula
-    except Exception:
-        raise HTTPException(status_code=422, detail="Não foi possível ler o arquivo. Envie um CSV.")
-    return _analisar(df)
+        mapa = json.loads(mapeamento) if mapeamento else None
+        df = ler_arquivo(conteudo, arquivo.filename)
+    except json.JSONDecodeError:
+        raise HTTPException(status_code=422, detail="Mapeamento de colunas inválido.")
+    except ErroDeEntrada as erro:
+        raise HTTPException(status_code=422, detail=str(erro))
+    return _analisar(df, mapa)
 
 
 @app.get("/analisar-base/exemplo", response_model=AnaliseBase)
@@ -156,9 +168,40 @@ def analisar_base_exemplo():
     return _analisar(pd.read_csv(BASE_EXEMPLO))
 
 
+def _em_portugues(df: pd.DataFrame) -> pd.DataFrame:
+    """Converte a base do formato original para colunas e valores em português."""
+    pt = df.copy()
+    pt["SeniorCitizen"] = pt["SeniorCitizen"].map({0: "não", 1: "sim"})
+    for c in pt.columns:
+        if pt[c].dtype == object and c != "customerID":
+            pt[c] = pt[c].map(lambda v: VALORES.get(v, v))
+    return pt.rename(columns={"customerID": "ID do cliente", **NOMES})
+
+
+def _excel(df: pd.DataFrame, nome: str) -> Response:
+    saida = io.BytesIO()
+    with pd.ExcelWriter(saida, engine="openpyxl") as escritor:
+        df.to_excel(escritor, index=False, sheet_name="clientes")
+        aba = escritor.sheets["clientes"]
+        for coluna in aba.columns:
+            aba.column_dimensions[coluna[0].column_letter].width = max(14, len(str(coluna[0].value)) + 4)
+    return Response(saida.getvalue(), media_type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    headers={"Content-Disposition": f"attachment; filename={nome}"})
+
+
 @app.get("/base-exemplo.csv", include_in_schema=False)
 def baixar_base_exemplo():
     return FileResponse(BASE_EXEMPLO, media_type="text/csv", filename="base_exemplo_clientes.csv")
+
+
+@app.get("/base-exemplo.xlsx", include_in_schema=False)
+def baixar_base_exemplo_excel():
+    return _excel(_em_portugues(pd.read_csv(BASE_EXEMPLO)), "base_exemplo_clientes.xlsx")
+
+
+@app.get("/modelo-planilha.xlsx", include_in_schema=False)
+def baixar_modelo_planilha_excel():
+    return _excel(_em_portugues(pd.read_csv(BASE_EXEMPLO, nrows=3)), "modelo_planilha_clientes.xlsx")
 
 
 @app.get("/modelo-planilha.csv", include_in_schema=False)

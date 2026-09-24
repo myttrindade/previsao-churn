@@ -61,6 +61,12 @@ tr:last-child td{border-bottom:0}
 .motivo{color:var(--ink-2)}
 .mais{margin:12px auto 0;display:block}
 .cont{color:var(--muted);font-size:.8rem}
+.mapa{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
+.mapa h3{font-size:.95rem;margin-bottom:4px}
+.mapa .fields{margin:12px 0}
+.sim{border:1px solid var(--border);background:none;color:var(--ink-2);border-radius:8px;padding:4px 10px;font-size:.8rem;white-space:nowrap}
+.sim:hover{color:var(--ink);border-color:var(--ink-2)}
+.aviso{border:1px solid var(--accent);border-radius:10px;padding:10px 12px;margin-bottom:12px;font-size:.9rem;display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap}
 h1{font-size:clamp(1.5rem,3.5vw,2rem);letter-spacing:-.02em}
 .sub{color:var(--ink-2);margin:4px 0 20px;max-width:65ch}
 .sub a{color:var(--ink-2)}
@@ -109,14 +115,20 @@ footer a{color:var(--ink-2)}
 
   <section id="aba-base" role="tabpanel" aria-labelledby="tab-base">
     <div class="card">
-      <p class="rec" style="margin-bottom:12px">Envie a planilha com seus clientes (um por linha, com um ID) e receba a lista ordenada do maior para o menor risco de cancelamento.</p>
+      <p class="rec" style="margin-bottom:12px">Envie a planilha com seus clientes, em Excel ou CSV, um por linha e com um ID. Colunas e valores podem estar em português ou inglês. Você recebe a lista ordenada do maior para o menor risco de cancelamento.</p>
       <div class="acoes">
         <button class="btn pri" id="usar-exemplo">Usar base de exemplo (500 clientes)</button>
-        <label class="btn" style="display:inline-flex;cursor:pointer">Enviar planilha CSV<input type="file" id="arquivo" accept=".csv,text/csv" hidden></label>
+        <label class="btn" style="display:inline-flex;cursor:pointer">Enviar planilha (Excel ou CSV)<input type="file" id="arquivo" accept=".xlsx,.xls,.csv,text/csv" hidden></label>
         <span class="cont" id="status"></span>
       </div>
-      <div class="links"><a href="/modelo-planilha.csv">Baixar modelo de planilha</a><a href="/base-exemplo.csv">Baixar a base de exemplo</a></div>
+      <div class="links"><a href="/modelo-planilha.xlsx">Baixar modelo de planilha (Excel)</a><a href="/base-exemplo.xlsx">Baixar a base de exemplo (Excel)</a></div>
       <div class="erro" id="erro" hidden></div>
+      <form class="mapa" id="mapa" hidden>
+        <h3>Correspondência de colunas</h3>
+        <p class="rec" id="mapa-msg"></p>
+        <div class="fields" id="mapa-campos"></div>
+        <button class="btn pri" type="submit">Continuar análise</button>
+      </form>
     </div>
 
     <div id="resultado" hidden>
@@ -136,7 +148,7 @@ footer a{color:var(--ink-2)}
       </div>
       <div class="tbl">
         <table>
-          <thead><tr><th>#</th><th>Cliente</th><th>Chance de cancelar</th><th>Risco</th><th>Abordar?</th><th>Principal motivo</th><th>Contrato</th><th class="n">Meses</th><th class="n">Mensalidade</th></tr></thead>
+          <thead><tr><th>#</th><th>Cliente</th><th>Chance de cancelar</th><th>Risco</th><th>Abordar?</th><th>Principal motivo</th><th>Contrato</th><th class="n">Meses</th><th class="n">Mensalidade</th><th></th></tr></thead>
           <tbody id="linhas"></tbody>
         </table>
       </div>
@@ -146,7 +158,8 @@ footer a{color:var(--ink-2)}
   </section>
 
   <section id="aba-cliente" role="tabpanel" aria-labelledby="tab-cliente" hidden>
-  <p class="rec" style="margin-bottom:12px">Simule o perfil de um cliente para ver a chance de cancelar, a recomendação e o que mais pesou.</p>
+  <div class="aviso" id="simulando" hidden><span id="simulando-txt"></span><button class="sim" id="voltar-lista" type="button">← Voltar para a lista</button></div>
+  <p class="rec" style="margin-bottom:12px">Simule o perfil de um cliente para ver a chance de cancelar, a recomendação e o que mais pesou. Mude os campos para testar ofertas, por exemplo trocar o contrato para 1 ou 2 anos.</p>
   <div class="grid">
     <form class="card" id="form">
       <div class="presets"><span>Exemplos:</span>
@@ -276,18 +289,20 @@ const usd = v => 'US$ ' + v.toLocaleString('pt-BR', {maximumFractionDigits: 0});
 const usd2 = v => 'US$ ' + v.toLocaleString('pt-BR', {minimumFractionDigits: 2, maximumFractionDigits: 2});
 const num = v => v.toLocaleString('pt-BR');
 const esc = t => String(t).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
-let analise = null, filtro = 'todos', limite = 50;
+let analise = null, filtro = 'todos', limite = 50, arquivoAtual = null, mapaAtual = {};
 
 async function analisar(requisicao) {
   const botao = document.getElementById('usar-exemplo');
   const erro = document.getElementById('erro');
   const status = document.getElementById('status');
-  erro.hidden = true; botao.disabled = true;
+  erro.hidden = true; botao.disabled = true; document.getElementById('mapa').hidden = true;
   status.textContent = 'Analisando...';
   try {
     const r = await requisicao();
     const corpo = await r.json();
+    if (!r.ok && corpo.detail && corpo.detail.tipo === 'mapeamento') { pedirMapeamento(corpo.detail); return; }
     if (!r.ok) throw new Error(typeof corpo.detail === 'string' ? corpo.detail : 'Não foi possível analisar a planilha.');
+    document.getElementById('mapa').hidden = true;
     analise = corpo; filtro = 'todos'; limite = 50;
     document.querySelectorAll('[data-filtro]').forEach(b => b.setAttribute('aria-pressed', b.dataset.filtro === 'todos'));
     document.getElementById('busca').value = '';
@@ -300,11 +315,33 @@ async function analisar(requisicao) {
   }
 }
 document.getElementById('usar-exemplo').addEventListener('click', () => analisar(() => fetch('/analisar-base/exemplo')));
+function enviarArquivo() {
+  const dados = new FormData(); dados.append('arquivo', arquivoAtual);
+  if (Object.keys(mapaAtual).length) dados.append('mapeamento', JSON.stringify(mapaAtual));
+  analisar(() => fetch('/analisar-base', {method: 'POST', body: dados}));
+}
 document.getElementById('arquivo').addEventListener('change', e => {
   const f = e.target.files[0]; if (!f) return;
-  const dados = new FormData(); dados.append('arquivo', f);
-  analisar(() => fetch('/analisar-base', {method: 'POST', body: dados}));
+  arquivoAtual = f; mapaAtual = {};
+  enviarArquivo();
   e.target.value = '';
+});
+
+function pedirMapeamento(det) {
+  const reconhecidas = Object.keys(det.reconhecidas).length;
+  document.getElementById('mapa-msg').textContent =
+    `${det.mensagem} Reconheci ${reconhecidas} coluna${reconhecidas === 1 ? '' : 's'} automaticamente; falta${det.faltando.length === 1 ? '' : 'm'} ${det.faltando.length}.`;
+  const opcoes = ['<option value="">— escolha a coluna —</option>',
+    ...det.colunas_arquivo.map(c => `<option value="${esc(c)}">${esc(c)}</option>`)].join('');
+  document.getElementById('mapa-campos').innerHTML = det.faltando.map(f =>
+    `<label>${esc(f.nome)}<select name="${f.campo}" required>${opcoes}</select></label>`).join('');
+  document.getElementById('mapa').hidden = false;
+  document.getElementById('resultado').hidden = true;
+}
+document.getElementById('mapa').addEventListener('submit', e => {
+  e.preventDefault();
+  for (const s of e.target.querySelectorAll('select')) mapaAtual[s.name] = s.value;
+  enviarArquivo();
 });
 
 function desenharResumo() {
@@ -346,8 +383,9 @@ function desenharTabela() {
       <td>${esc(c.contrato)}</td>
       <td class="n">${c.meses_como_cliente}</td>
       <td class="n">${usd2(c.mensalidade)}</td>
+      <td><button class="sim" data-simular="${esc(c.id)}">Simular</button></td>
     </tr>`;
-  }).join('') || '<tr><td colspan="9" class="vazio">Nenhum cliente encontrado.</td></tr>';
+  }).join('') || '<tr><td colspan="10" class="vazio">Nenhum cliente encontrado.</td></tr>';
   document.getElementById('contagem').textContent =
     `Mostrando ${num(Math.min(limite, lista.length))} de ${num(lista.length)} clientes, do maior para o menor risco.`;
   document.getElementById('mais').hidden = lista.length <= limite;
@@ -358,6 +396,16 @@ document.querySelectorAll('[data-filtro]').forEach(b => b.addEventListener('clic
   desenharTabela();
 }));
 document.getElementById('busca').addEventListener('input', () => { limite = 50; desenharTabela(); });
+document.getElementById('linhas').addEventListener('click', e => {
+  const b = e.target.closest('[data-simular]'); if (!b) return;
+  const c = analise.clientes.find(x => x.id === b.dataset.simular);
+  preencher({...c.dados, SeniorCitizen: c.dados.SeniorCitizen === 'Yes' ? '1' : '0'});
+  document.getElementById('simulando-txt').innerHTML =
+    `Simulando o cliente <strong>${esc(c.id)}</strong> (${pct(c.probabilidade_churn)} de risco na lista). Altere os campos e clique em Calcular risco.`;
+  document.getElementById('simulando').hidden = false;
+  mostrarAba('cliente'); calcular(); window.scrollTo({top: 0, behavior: 'smooth'});
+});
+document.getElementById('voltar-lista').addEventListener('click', () => mostrarAba('base'));
 document.getElementById('mais').addEventListener('click', () => { limite += 100; desenharTabela(); });
 
 document.getElementById('baixar').addEventListener('click', () => {

@@ -10,15 +10,11 @@ import pandas as pd
 
 from churn import negocio
 from churn.dados import CATEGORICAS, NOMES, NUMERICAS, VALORES, limpar
+from churn.entrada import ErroDeEntrada, MapeamentoNecessario, padronizar  # noqa: F401
 
 ARQUIVO_MODELO = Path(__file__).resolve().parents[2] / "models" / "modelo_churn.joblib"
-COLUNAS_ID = ["customerID", "id", "ID", "cliente", "Cliente"]
 LIMITE_LINHAS = 50_000
 IMPACTO_MINIMO = 0.15  # contribuição mínima (log-odds) para um fator ser citado como motivo
-
-
-class ErroDeEntrada(ValueError):
-    """Planilha enviada fora do formato esperado."""
 
 
 def _formata_valor(variavel: str, valor) -> str:
@@ -83,33 +79,15 @@ class Previsor:
         }
 
     # ---------- base inteira ----------
-    def validar(self, bruto: pd.DataFrame) -> pd.DataFrame:
-        if bruto.empty:
-            raise ErroDeEntrada("A planilha está vazia.")
+    def analisar_base(self, bruto: pd.DataFrame, mapeamento: dict[str, str] | None = None) -> dict:
         if len(bruto) > LIMITE_LINHAS:
             raise ErroDeEntrada(f"A planilha tem {len(bruto):,} linhas; o limite é {LIMITE_LINHAS:,}.")
-        faltando = [c for c in self.features if c not in bruto.columns]
-        if faltando:
-            raise ErroDeEntrada("Colunas obrigatórias ausentes: " + ", ".join(faltando))
-        df = limpar(bruto)
-        for c in ("tenure", "MonthlyCharges"):
-            df[c] = pd.to_numeric(df[c], errors="coerce")
-            if df[c].isna().any():
-                linhas = (df.index[df[c].isna()] + 2)[:5].tolist()
-                raise ErroDeEntrada(f"Valores não numéricos em '{c}' (linhas {linhas}).")
-        for c in CATEGORICAS:
-            invalidos = set(df[c].astype(str)) - self.valores_aceitos[c]
-            if invalidos:
-                raise ErroDeEntrada(f"Valores não reconhecidos em '{c}': {', '.join(sorted(invalidos)[:5])}. "
-                                    f"Aceitos: {', '.join(sorted(self.valores_aceitos[c]))}.")
-        return df
-
-    def analisar_base(self, bruto: pd.DataFrame) -> dict:
-        bruto = bruto.rename(columns=lambda c: str(c).strip())
-        col_id = next((c for c in COLUNAS_ID if c in bruto.columns), None)
-        ids = bruto[col_id].astype(str) if col_id else pd.Series([f"linha {i + 2}" for i in range(len(bruto))])
-        df = self.validar(bruto).reset_index(drop=True)
+        ids, df = padronizar(bruto, mapeamento)
         X = df[self.features]
+        for c in CATEGORICAS:  # garantia extra: só valores que o modelo conhece
+            invalidos = set(X[c].astype(str)) - self.valores_aceitos[c]
+            if invalidos:
+                raise ErroDeEntrada(f"Valores não reconhecidos em {NOMES[c]}: {', '.join(sorted(invalidos))}.")
 
         prob = self.pipeline.predict_proba(X)[:, 1]
         abordar = prob >= self.corte
@@ -136,6 +114,7 @@ class Previsor:
                 "contrato": VALORES.get(X.iloc[i]["Contract"], X.iloc[i]["Contract"]),
                 "motivos_risco": motivos,
                 "fator_protecao": f"{NOMES[protege]}: {_formata_valor(protege, X.iloc[i][protege])}",
+                "dados": {k: (v.item() if hasattr(v, "item") else v) for k, v in X.iloc[i].items()},
             })
         clientes.sort(key=lambda c: c["probabilidade_churn"], reverse=True)
 

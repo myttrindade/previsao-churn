@@ -10,12 +10,13 @@ Modelo de machine learning que estima a chance de cada cliente cancelar o servi�
 
 ## Como uma empresa usa
 
-1. **Exporta os clientes** do CRM ou do banco de dados em CSV, um por linha, com um ID ([modelo de planilha](https://previsao-churn.onrender.com/modelo-planilha.csv)).
-2. **Envia a planilha** na aba *Analisar minha base*. O app calcula o risco de todos de uma vez.
+1. **Exporta os clientes** do CRM ou do banco de dados, em **Excel ou CSV**, um por linha e com um ID ([modelo de planilha](https://previsao-churn.onrender.com/modelo-planilha.xlsx)).
+2. **Envia a planilha** na aba *Analisar minha base*. O app reconhece sozinho colunas e valores **em português ou inglês** ("Tipo de contrato", "Mensal", "Sim", "R$ 95,50"...). Se alguma coluna tiver um nome diferente, ele pergunta qual coluna da planilha corresponde a cada informação.
 3. **Recebe a lista ordenada** do maior para o menor risco, com a recomendação de abordar ou não e o principal motivo de cada cliente, além do resumo: quantos abordar, receita em jogo e ganho esperado da campanha.
-4. **Baixa a lista** filtrada para a equipe de retenção trabalhar.
+4. **Simula ofertas:** o botão *Simular* abre o cliente na calculadora, já preenchido, para testar o efeito de uma mudança, por exemplo migrar do contrato mensal para o anual.
+5. **Baixa a lista** filtrada para a equipe de retenção trabalhar.
 
-Para testar sem dados próprios, o botão *Usar base de exemplo* analisa 500 clientes fictícios. A aba *Simular um cliente* mostra o efeito de cada característica, por exemplo quanto o risco cai se o cliente migrar para um contrato anual.
+Para testar sem dados próprios, o botão *Usar base de exemplo* analisa 500 clientes fictícios, que também podem ser [baixados em Excel](https://previsao-churn.onrender.com/base-exemplo.xlsx).
 
 ## O problema
 
@@ -61,7 +62,7 @@ Os três modelos empatam em ROC-AUC (0,845), e o LightGBM fica levemente à fren
 |---|---|
 | API | FastAPI, com validação dos dados de entrada (Pydantic) e documentação automática em `/docs` |
 | Explicação por cliente | Valores SHAP nativos do LightGBM, agrupados por variável original |
-| Análise em lote | Endpoint `POST /analisar-base` recebe um CSV (vírgula ou ponto e vírgula), valida colunas e valores e devolve os clientes ordenados por risco |
+| Análise em lote | Endpoint `POST /analisar-base` recebe Excel ou CSV, reconhece colunas e valores em português ou inglês (com correspondência manual quando necessário), valida os dados e devolve os clientes ordenados por risco |
 | App web | HTML + JavaScript servido pela própria API: análise da base inteira e simulação de um cliente |
 | Empacotamento | Docker |
 | Hospedagem | Render, com deploy automático a cada push na branch main |

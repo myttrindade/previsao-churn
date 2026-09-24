@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Previsão de Churn</title>
 <meta name="description" content="Estime a chance de um cliente cancelar o serviço e veja os fatores que mais pesaram na previsão.">
+<script>try{const t=localStorage.getItem('tema');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <style>
 :root{
   color-scheme:light;
@@ -61,6 +62,10 @@ tr:last-child td{border-bottom:0}
 .motivo{color:var(--ink-2)}
 .mais{margin:12px auto 0;display:block}
 .cont{color:var(--muted);font-size:.8rem}
+.topo{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.tema{display:inline-flex;border:1px solid var(--border);border-radius:999px;padding:3px;background:var(--surface);flex:0 0 auto}
+.tema button{border:0;background:none;color:var(--ink-2);font-size:.82rem;padding:5px 12px;border-radius:999px}
+.tema button[aria-pressed="true"]{background:var(--ink);color:var(--surface)}
 .mapa{margin-top:14px;border-top:1px solid var(--line);padding-top:14px}
 .mapa h3{font-size:.95rem;margin-bottom:4px}
 .mapa .fields{margin:12px 0}
@@ -109,7 +114,13 @@ footer a{color:var(--ink-2)}
 </head>
 <body>
 <div class="wrap">
-  <h1>Previsão de Churn</h1>
+  <div class="topo">
+    <h1>Previsão de Churn</h1>
+    <div class="tema" role="group" aria-label="Tema">
+      <button type="button" data-tema="light">☀ Claro</button>
+      <button type="button" data-tema="dark">☾ Escuro</button>
+    </div>
+  </div>
   <p class="sub">Descubra quais clientes estão prestes a cancelar, em quem vale investir uma oferta de retenção e o que mais pesa no risco de cada um. <a href="/docs">Documentação da API</a></p>
 
   <nav class="tabs" role="tablist">
@@ -230,6 +241,20 @@ footer a{color:var(--ink-2)}
 </div>
 
 <script>
+// ---------- tema claro / escuro ----------
+function temaAtual() {
+  return document.documentElement.dataset.theme || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+}
+function marcarTema() {
+  document.querySelectorAll('[data-tema]').forEach(b => b.setAttribute('aria-pressed', b.dataset.tema === temaAtual()));
+}
+document.querySelectorAll('[data-tema]').forEach(b => b.addEventListener('click', () => {
+  document.documentElement.dataset.theme = b.dataset.tema;
+  try { localStorage.setItem('tema', b.dataset.tema); } catch (e) {}
+  marcarTema();
+}));
+marcarTema();
+
 const form = document.getElementById('form');
 const opcoesInternet = [['No', 'Não'], ['Yes', 'Sim'], ['No internet service', 'Sem internet']];
 document.querySelectorAll('[data-internet]').forEach(s =>

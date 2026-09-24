@@ -1,4 +1,4 @@
-# 📉 Previsão de Churn: do modelo à produção
+# 📉 Retém: previsão de churn do modelo à produção
 
 Modelo de machine learning que estima a chance de cada cliente cancelar o serviço, decide **quem vale abordar** com uma oferta de retenção e **explica o porquê** de cada previsão. O modelo está em produção como API e app web.
 

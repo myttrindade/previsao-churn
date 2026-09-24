@@ -16,7 +16,7 @@
   --grad:linear-gradient(120deg,#2563eb 0%,#3b82f6 100%);
   --titulo:linear-gradient(90deg,#5b8def 0%,#9b6dff 50%,#e0409a 100%);
   --hero:radial-gradient(760px 460px at 0% 0%,rgba(76,50,140,.38),transparent 65%),#000;
-  --alto:#f04d57; --alto-bg:rgba(240,77,87,.14); --medio:#f5b53d; --medio-bg:rgba(245,181,61,.14); --baixo:#2fcf7a; --baixo-bg:rgba(47,207,122,.13);
+  --alto:#f04d57; --alto-bg:rgba(240,77,87,.14); --medio:#f28c38; --medio-bg:rgba(242,140,56,.15); --amarelo:#facc15; --amarelo-bg:rgba(250,204,21,.13); --baixo:#2fcf7a; --baixo-bg:rgba(47,207,122,.13);
   --track:#23242d;
 }
 *{box-sizing:border-box;margin:0}
@@ -98,7 +98,7 @@ select:focus,input:focus{outline:2px solid var(--roxo);outline-offset:1px}
 .kpi .v{font-size:1.7rem;font-weight:700;letter-spacing:-.02em;line-height:1.2;margin:2px 0}
 .kpi .d{color:var(--muted);font-size:.78rem}
 .kpi.azul{--c:var(--azul);--cb:var(--azul-bg)} .kpi.roxo{--c:var(--roxo);--cb:var(--roxo-bg)}
-.kpi.rosa{--c:var(--rosa);--cb:var(--rosa-bg)} .kpi.alto{--c:var(--alto);--cb:var(--alto-bg)} .kpi.baixo{--c:var(--baixo);--cb:var(--baixo-bg)}
+.kpi.rosa{--c:var(--rosa);--cb:var(--rosa-bg)} .kpi.amarelo{--c:var(--amarelo);--cb:var(--amarelo-bg)} .kpi.alto{--c:var(--alto);--cb:var(--alto-bg)} .kpi.baixo{--c:var(--baixo);--cb:var(--baixo-bg)}
 .niveis{display:flex;gap:12px;font-size:1.25rem!important}
 .niveis span{display:inline-flex;align-items:center;gap:5px}
 .niveis i{width:9px;height:9px;border-radius:50%;display:inline-block}
@@ -121,7 +121,7 @@ tr:last-child td{border-bottom:0}
 .tag{display:inline-flex;gap:6px;align-items:center;white-space:nowrap;font-weight:600;font-size:.8rem;padding:3px 10px;border-radius:999px}
 .tag.alto{color:var(--alto);background:var(--alto-bg)} .tag.medio{color:var(--medio);background:var(--medio-bg)} .tag.baixo{color:var(--baixo);background:var(--baixo-bg)}
 .tag .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
-.abordar{display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:.8rem;color:var(--rosa);background:var(--rosa-bg);padding:3px 10px;border-radius:999px;white-space:nowrap}
+.abordar{display:inline-flex;align-items:center;gap:5px;font-weight:600;font-size:.8rem;color:var(--amarelo);background:var(--amarelo-bg);padding:3px 10px;border-radius:999px;white-space:nowrap}
 .nao{color:var(--muted);font-size:.85rem}
 .motivo{color:var(--ink-2)}
 .sub-id{display:block;color:var(--muted);font-size:.76rem;font-weight:400}
@@ -434,7 +434,7 @@ function desenharResumo() {
     `<span><i style="background:var(--medio)"></i>${num(r.risco_medio)}</span><span><i style="background:var(--baixo)"></i>${num(r.risco_baixo)}</span></span>`;
   const tiles = [
     ['azul', 'clientes', 'Clientes analisados', num(r.clientes), 'na base enviada'],
-    ['rosa', 'abordar', 'Abordar agora', num(r.abordar), `${Math.round(r.abordar / r.clientes * 100)}% da base`],
+    ['amarelo', 'abordar', 'Abordar agora', num(r.abordar), `${Math.round(r.abordar / r.clientes * 100)}% da base`],
     ['alto', 'risco', 'Por nível de risco', niveis, 'alto · médio · baixo'],
     ['roxo', 'receita', 'Receita mensal em jogo', usd(r.receita_mensal_abordados), 'mensalidades dos clientes a abordar'],
     ['baixo', 'ganho', 'Ganho esperado da campanha', usd(r.ganho_esperado_campanha), 'em 12 meses, já descontado o custo das ofertas'],

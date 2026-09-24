@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Retém · Previsão de Churn</title>
+<title>Previsão Churn</title>
 <meta name="description" content="Estime a chance de um cliente cancelar o serviço e veja os fatores que mais pesaram na previsão.">
 <script>document.documentElement.dataset.theme='dark';</script>
 <style>
@@ -33,14 +33,14 @@ button{font:inherit;cursor:pointer}
 .hero .wrap{padding-bottom:0}
 .hero-top{display:flex;justify-content:space-between;align-items:center;gap:12px}
 .marca{display:flex;align-items:center;gap:12px;text-decoration:none;color:#fff}
-.logo{width:40px;height:40px;border-radius:11px;background:#15151b;border:1px solid rgba(255,255,255,.12);display:grid;place-items:center}
-.logo svg{width:22px;height:22px}
-.marca b{display:block;font-size:1.15rem;letter-spacing:-.02em;line-height:1.1}
-.marca small{font-size:.78rem;color:#a1a1aa}
+.logo{width:48px;height:48px;border-radius:11px;background:#15151b;border:1px solid rgba(255,255,255,.12);display:grid;place-items:center}
+.logo svg{width:26px;height:26px}
+.marca b{display:block;font-size:1.6rem;letter-spacing:-.02em;line-height:1.1}
+.marca small{font-size:.88rem;color:#a1a1aa}
 .capa{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:48px;align-items:center;margin-top:44px}
 .rotulo{display:inline-flex;align-items:center;gap:8px;color:var(--azul);font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
 .rotulo svg{width:16px;height:16px}
-.hero h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:700;letter-spacing:-.035em;line-height:1.05;margin:14px 0 20px}
+.hero h1{font-size:clamp(2rem,4.2vw,3rem);font-weight:700;letter-spacing:-.035em;line-height:1.05;margin:14px 0 20px}
 .hero h1 em{font-style:normal;background:var(--titulo);-webkit-background-clip:text;background-clip:text;color:transparent}
 .hero p{max-width:58ch;color:#a1a1aa;font-size:1.02rem;line-height:1.65}
 .hero p a{color:#d4d4d8}
@@ -159,7 +159,7 @@ footer p{max-width:85ch}
     <div class="hero-top">
       <a class="marca" href="/">
         <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6"/><path d="M22 11h-6"/></svg></span>
-        <span><b>Retém</b><small>Previsão de churn e retenção de clientes</small></span>
+        <span><b>Previsão Churn</b><small>Retenção de clientes com machine learning</small></span>
       </a>
     </div>
     <div class="capa">
@@ -295,7 +295,7 @@ footer p{max-width:85ch}
 
   <footer>
     <p>Modelo LightGBM treinado na base pública Telco Customer Churn (IBM). O ponto de corte (29%) foi escolhido para maximizar o resultado de uma campanha de retenção: oferta de 1 mês grátis, 30% de sucesso e 12 meses de receita preservada. A base de exemplo tem clientes fictícios.</p>
-    <span>Retém · <a href="/saude">métricas do modelo</a> · <a href="https://github.com/myttrindade/previsao-churn">código no GitHub</a></span>
+    <span>Previsão Churn · <a href="/saude">métricas do modelo</a> · <a href="https://github.com/myttrindade/previsao-churn">código no GitHub</a></span>
   </footer>
 </div>
 

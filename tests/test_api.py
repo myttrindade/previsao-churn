@@ -45,4 +45,4 @@ def test_valor_invalido_e_rejeitado():
 def test_pagina_inicial():
     r = cliente.get("/")
     assert r.status_code == 200
-    assert "Previsão de Churn" in r.text
+    assert "Previsão Churn" in r.text

@@ -6,6 +6,16 @@ Uso local:
 
 from __future__ import annotations
 
+import os
+
+# A Vercel nao tem a libgomp do sistema que o LightGBM precisa (a Render
+# instala via apt-get no Dockerfile). Aponta para a copia embutida antes de
+# qualquer import que carregue o LightGBM.
+os.environ["LD_LIBRARY_PATH"] = (
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "lib")
+    + os.pathsep + os.environ.get("LD_LIBRARY_PATH", "")
+)
+
 import io
 import json
 import sys
